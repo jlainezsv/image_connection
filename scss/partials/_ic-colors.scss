@@ -1,0 +1,22 @@
+
+$black:#000000;
+$royal:#252F69;
+$yellow:#FFC300;
+$burgundy:#4D2028;
+$lightBblue:#8496BE;
+$burntOrange:#733D27;
+$navy:#202a44;
+
+.product-color{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    border: 1px solid #bebbbb;
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.black-white{@include product-color($black, $white);}
+.royal-white{@include product-color($royal, $white);}
+.lightBlue-navy{@include product-color($lightBblue, $navy);}

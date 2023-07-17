@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse / Expand Sidebar Tutorial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="short">
+    <div class="custom-container">
+
+      <!-- Sidebar Desktop -->
+        <div class="sidebar d-none d-lg-block">
+            <div class="sidebartop">
+                <a class="menu">
+                    <i class="icon-menu"></i>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-poloshirt"></i><span class="text">Polo Shirts</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Polo Shirts Homepage</a></li>
+                          <li><a class="dropdown-item" href="#">Uniform Polo Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Performance Polo Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Color Block Polo Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Long Sleeve Polo Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Women's Polo Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">100% Cotton Polos</a></li>
+                          <li><a class="dropdown-item" href="#">Contemporary Polos</a></li>
+                          <li><a class="dropdown-item" href="#">Pocket Polo Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Big & Tall Polos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-dress-shirt"></i><span class="text">Dress Shirts</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Dress Shirts Homepage</a></li>
+                          <li><a class="dropdown-item" href="#">Stripes, Checks, & Plaids</a></li>
+                          <li><a class="dropdown-item" href="#">Executive Dress Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Camp Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Easy Care Uniform Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Corporate Apparel</a></li>
+                          <li><a class="dropdown-item" href="#">Mocks & Turtlenecks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-work-uniform"></i><span class="text">Work Uniforms</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Work Uniforms Homepage</a></li>
+                          <li><a class="dropdown-item" href="#">Carhartt Work Uniforms</a></li>
+                          <li><a class="dropdown-item" href="#">Work Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Work Pants</a></li>
+                          <li><a class="dropdown-item" href="#">Coveralls / Overalls</a></li>
+                          <li><a class="dropdown-item" href="#">Work Jackets</a></li>
+                          <li><a class="dropdown-item" href="#">Work Shorts</a></li>
+                          <li><a class="dropdown-item" href="#">Hi Vis Safety Apparel</a></li>
+                          <li><a class="dropdown-item" href="#">Fire Retardant Uniforms</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-hospitality"></i><span class="text">Hospitality</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Hospitality Homepage</a></li>
+                          <li><a class="dropdown-item" href="#">Slacks & Skirts</a></li>
+                          <li><a class="dropdown-item" href="#">Blazers & Suits</a></li>
+                          <li><a class="dropdown-item" href="#">Shirts & Blouses</a></li>
+                          <li><a class="dropdown-item" href="#">Maintenance</a></li>
+                          <li><a class="dropdown-item" href="#">Housekeeping</a></li>
+                          <li><a class="dropdown-item" href="#">Belts</a></li>
+                          <li><a class="dropdown-item" href="#">Ties & Neckwear</a></li>
+                          <li><a class="dropdown-item" href="#">Vests</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-outerwear"></i><span class="text">Outerwear</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Outerwear Homepage</a></li>
+                          <li><a class="dropdown-item" href="#">New Outerwear</a></li>
+                          <li><a class="dropdown-item" href="#">1/4 Zip Pullovers</a></li>
+                          <li><a class="dropdown-item" href="#">Lightweight Jackets</a></li>
+                          <li><a class="dropdown-item" href="#">Fleece Jackets</a></li>
+                          <li><a class="dropdown-item" href="#">Windshirts</a></li>
+                          <li><a class="dropdown-item" href="#">3 in 1 Jacket Systems</a></li>
+                          <li><a class="dropdown-item" href="#">Parkas/Extreme Cold</a></li>
+                          <li><a class="dropdown-item" href="#">Vests</a></li>
+                          <li><a class="dropdown-item" href="#">Performance Jackets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-restaurant"></i><span class="text">Restaurant Uniforms</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Restaurant Uniforms Homepage</a></li>
+                          <li><a class="dropdown-item" href="#">Chef Coats</a></li>
+                          <li><a class="dropdown-item" href="#">Chef Pants</a></li>
+                          <li><a class="dropdown-item" href="#">Cook Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Server Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Aprons</a></li>
+                          <li><a class="dropdown-item" href="#">Chef Hats</a></li>
+                          <li><a class="dropdown-item" href="#">Polo Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Service Pants</a></li>
+                          <li><a class="dropdown-item" href="#">Vests</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-ems"></i><span class="text">EMS/Fire & Public Safety</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">EMS/Fire & Public Safety Homepage</a></li>
+                          <li><a class="dropdown-item" href="#">ANSI Safety Apparel</a></li>
+                          <li><a class="dropdown-item" href="#">EMS-First Responder Uniforms</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-scrubs"></i><span class="text">Scrubs & Lab Coats</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Scrubs & Lab Coats Homepage</a></li>
+                          <li><a class="dropdown-item" href="#">Scrub Tops</a></li>
+                          <li><a class="dropdown-item" href="#">Scrub Pants</a></li>
+                          <li><a class="dropdown-item" href="#">Lab Coats</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-tshirt"></i><span class="text">T-Shirts</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">T-Shirts Homepage</a></li>
+                          <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion Tees</a></li>
+                          <li><a class="dropdown-item" href="#">Performance Tees</a></li>
+                          <li><a class="dropdown-item" href="#">Short Sleeve T-Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Long Sleeve T-Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Pocket T-Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Tanks</a></li>
+                          <li><a class="dropdown-item" href="#">Carhartt® Work Tees</a></li>
+                          <li><a class="dropdown-item" href="#">Kid's Tees</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-cap"></i><span class="text">Caps & Hats</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Caps & Hats Homepage</a></li>
+                          <li><a class="dropdown-item" href="#">Ball Caps</a></li>
+                          <li><a class="dropdown-item" href="#">Knit Caps</a></li>
+                          <li><a class="dropdown-item" href="#">Visors</a></li>
+                          <li><a class="dropdown-item" href="#">Hats</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-sportswear"></i><span class="text">Sportswear</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Sportswear Homepage</a></li>
+                          <li><a class="dropdown-item" href="#">Team Sports</a></li>
+                          <li><a class="dropdown-item" href="#">Moisture Wicking Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Ladies Activewear</a></li>
+                          <li><a class="dropdown-item" href="#">Warm-ups / Sweatshirts</a></li>
+                          <li><a class="dropdown-item" href="#">Tank Tops</a></li>
+                          <li><a class="dropdown-item" href="#">Sleeveless Shirts</a></li>
+                          <li><a class="dropdown-item" href="#">Summer Ready Tanks</a></li>
+                          <li><a class="dropdown-item" href="#">Jackets</a></li>
+                          <li><a class="dropdown-item" href="#">Shorts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dropend">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="icon-bags"></i><span class="text">Bags & Accessories</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Bags & Accessories Homepage</a></li>
+                            <li><a class="dropdown-item" href="#">Backpacks</a></li>
+                            <li><a class="dropdown-item" href="#">Brief Bags</a></li>
+                            <li><a class="dropdown-item" href="#">Laptop/Computer Bags</a></li>
+                            <li><a class="dropdown-item" href="#">Duffel Bags</a></li>
+                            <li><a class="dropdown-item" href="#">Travel Bags and Luggage</a></li>
+                            <li><a class="dropdown-item" href="#">Sling Packs</a></li>
+                            <li><a class="dropdown-item" href="#">Tote Bags</a></li>
+                            <li><a class="dropdown-item" href="#">Logo Coolers</a></li>
+                            <li><a class="dropdown-item" href="#">Towels and Robes</a></li>
+                          </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+      <!-- End Sidebar Desktop -->
+        
+
+  <div class="main">
+    <!-- Mobile Menu -->      
+    <nav class="navbar bg-white sticky-top">
+                  <div class="container-fluid">
+                    <a class="navbar-brand">
+                      <img src="/images/logo-color.png" alt="Image Connection">
+                    </a>
+                    <div class="nav-contacts d-flex gap-3 align-items-center">
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-phone me-1"></i>(866) 250-3676</a>
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-message me-1"></i>Live Chat</a>
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-contact me-1"></i>Contact Us</a>
+                      <a href="" class="link-underline link-underline-opacity-0  d-none d-lg-block me-4"><i class="icon-user me-1"></i>Account</a>
+
+                      <div class="nav-contacts d-flex gap-3">
+                          <button href="" class="btn-ghost fs-4 me-2"><i class="icon-search"></i></button>
+                          <button class="btn-ghost fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPreView" aria-controls="cartPreView">
+                            <i class="icon-cart"></i>
+                          </button>
+
+                          <button class="btn btn-second d-lg-none fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                              <i class="icon-menu"></i>
+                          </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                              <div class="offcanvas-header bg-primary">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                  <img src="/images/logo-white.png" alt="Image Connection">
+                                </h5>
+
+                              <button class="btn btn-ghost btn-colors-inverted d-lg-none fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                  <i class="icon-close"></i>
+                              </button>
+
+                              </div>
+                              <div class="offcanvas-body">
+                                  
+                                  <form class="d-flex my-3" role="search">
+                                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                      <button class="btn btn-outline" type="submit">Search</button>
+                                  </form>
+                                  
+                                    <div class="accordion" id="accordionMenuMobile">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-1">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+                                            <i class="icon-poloshirt"></i><span class="text">Polo Shirts</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-2">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                            <i class="icon-dress-shirt"></i><span class="text">Dress Shirts</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-3">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                            <i class="icon-work-uniform"></i><span class="text">Work Uniforms</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-4">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                            <i class="icon-hospitality"></i><span class="text">Hospitality</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-5">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                                            <i class="icon-outerwear"></i><span class="text">Outerwear</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-6">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+                                            <i class="icon-restaurant"></i><span class="text">Restaurant Uniforms</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="heading-6" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-7">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+                                            <i class="icon-ems"></i><span class="text">EMS/Fire & Public Safety</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="heading-7" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-8">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+                                            <i class="icon-scrubs"></i><span class="text">Scrubs & Lab Coats</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="heading-8" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-9">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
+                                            <i class="icon-tshirt"></i><span class="text">T-Shirts</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-9" class="accordion-collapse collapse" aria-labelledby="heading-9" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-10">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10">
+                                            <i class="icon-cap"></i><span class="text">Caps & Hats</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-10" class="accordion-collapse collapse" aria-labelledby="heading-10" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-11">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11">
+                                            <i class="icon-sportswear"></i><span class="text">Sportswear</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-11" class="accordion-collapse collapse" aria-labelledby="heading-11" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-12">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12">
+                                            <i class="icon-bags"></i><span class="text">Bags & Accessories</span>
+                                          </button>
+                                        </h2>
+                                        <div id="collapse-12" class="accordion-collapse collapse" aria-labelledby="heading-12" data-bs-parent="#accordionMenuMobile">
+                                          <div class="accordion-body">
+                                            <a class="dropdown-item" href="#">Work Uniforms Homepage</a>
+                                            <a class="dropdown-item" href="#">Carhartt Work Uniforms</a>
+                                            <a class="dropdown-item" href="#">Work Shirts</a>
+                                            <a class="dropdown-item" href="#">Work Pants</a>
+                                            <a class="dropdown-item" href="#">Coveralls / Overalls</a>
+                                            <a class="dropdown-item" href="#">Work Jackets</a>
+                                            <a class="dropdown-item" href="#">Work Shorts</a>
+                                            <a class="dropdown-item" href="#">Hi Vis Safety Apparel</a>
+                                            <a class="dropdown-item" href="#">Fire Retardant Uniforms</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  </div>
+    </nav>
+    <!-- End Mobile Menu  -->
+
+    <!-- Main Container --> 
+    <div style="height:1600px;" class="p-5">
+        <h1>content here</h1>
+        
+
+        
+        <div class="product-color royal-white">
+            <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+              <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
+              </g>
+            </svg>
+            <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+              <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
+              </g>
+            </svg>
+        </div>
+        <div class="product-color lightBlue-navy">
+            <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+              <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
+              </g>
+            </svg>
+            <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+              <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
+              </g>
+            </svg>
+        </div>
+        
+    </div>
+    <!-- End Main Container -->
+  </div>
+</div>
+
+
+<div class="custom-container">
+  <footer class="footer">
+      <div>
+          <div class="container pt-5 pb-3">
+            <!-- Sitemap links on mobile -->
+            <div class="accordion d-lg-none" id="accordionFooter">
+                <div class="accordion-item bg-transparent mb-4">
+                  <h2 class="accordion-header " id="accordion-footer-one">
+                    <button class="accordion-button bg-transparent justify-content-between collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#additional-information" aria-expanded="flase" aria-controls="additional-information">
+                      <span class="text text-white fs-5">Additional Information</span><i class="icon-chevron-down"></i>
+                    </button>
+                  </h2>
+                  <div id="additional-information" class="accordion-collapse collapse" aria-labelledby="heading-additional-information" data-bs-parent="#accordionFooter">
+                    <div class="accordion-body text-white fs-5">
+                        <a class="dropdown-item" href="#">About Us</a>
+                        <a class="dropdown-item" href="#">Frequently Asked Questions</a>
+                        <a class="dropdown-item" href="#">Customer Testimonials</a>
+                        <a class="dropdown-item" href="#">Privacy Policy</a>
+                        <a class="dropdown-item" href="#">Terms & Conditions</a>
+                        <a class="dropdown-item" href="#">Sitemap</a>
+                        <a class="dropdown-item" href="#">Help Us Support Our Veterans</a>
+                        <a class="dropdown-item" href="#">Blog</a>
+                        <a class="dropdown-item" href="#">Online Uniform Stores</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent mb-4">
+                  <h2 class="accordion-header " id="accordion-footer-two">
+                    <button class="accordion-button bg-transparent justify-content-between collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bestselling-products" aria-expanded="flase" aria-controls="bestselling-products">
+                      <span class="text text-white fs-5">Bestselling Products</span><i class="icon-chevron-down"></i>
+                    </button>
+                  </h2>
+                  <div id="bestselling-products" class="accordion-collapse collapse" aria-labelledby="heading-bestselling-products" data-bs-parent="#accordionFooter">
+                    <div class="accordion-body text-white fs-5">
+                        <a class="dropdown-item" href="#">About Us</a>
+                        <a class="dropdown-item" href="#">Frequently Asked Questions</a>
+                        <a class="dropdown-item" href="#">Customer Testimonials</a>
+                        <a class="dropdown-item" href="#">Privacy Policy</a>
+                        <a class="dropdown-item" href="#">Terms & Conditions</a>
+                        <a class="dropdown-item" href="#">Sitemap</a>
+                        <a class="dropdown-item" href="#">Help Us Support Our Veterans</a>
+                        <a class="dropdown-item" href="#">Blog</a>
+                        <a class="dropdown-item" href="#">Online Uniform Stores</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent mb-4">
+                  <h2 class="accordion-header " id="accordion-footer-three">
+                    <button class="accordion-button bg-transparent justify-content-between collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#featured-products" aria-expanded="flase" aria-controls="featured-products">
+                      <span class="text text-white fs-5">Featured Products</span><i class="icon-chevron-down"></i>
+                    </button>
+                  </h2>
+                  <div id="featured-products" class="accordion-collapse collapse" aria-labelledby="heading-featured-products" data-bs-parent="#accordionFooter">
+                    <div class="accordion-body text-white fs-5">
+                        <a class="dropdown-item" href="#">About Us</a>
+                        <a class="dropdown-item" href="#">Frequently Asked Questions</a>
+                        <a class="dropdown-item" href="#">Customer Testimonials</a>
+                        <a class="dropdown-item" href="#">Privacy Policy</a>
+                        <a class="dropdown-item" href="#">Terms & Conditions</a>
+                        <a class="dropdown-item" href="#">Sitemap</a>
+                        <a class="dropdown-item" href="#">Help Us Support Our Veterans</a>
+                        <a class="dropdown-item" href="#">Blog</a>
+                        <a class="dropdown-item" href="#">Online Uniform Stores</a>
+                    </div>
+                  </div>
+                </div>
+  
+            </div>
+
+            <!-- Sitemap links on Desktop -->
+            <div class="d-none d-lg-block mb-5">
+              <div class="row">
+                <div class="col-4">
+                  <h2 class="text fs-4 mb-4 fw-bold">Additional Information</h2>
+                  <a class="d-block" href="#">About Us</a>
+                  <a class="d-block" href="#">Frequently Asked Questions</a>
+                  <a class="d-block" href="#">Customer Testimonials</a>
+                  <a class="d-block" href="#">Privacy Policy</a>
+                  <a class="d-block" href="#">Terms & Conditions</a>
+                  <a class="d-block" href="#">Sitemap</a>
+                  <a class="d-block" href="#">Help Us Support Our Veterans</a>
+                  <a class="d-block" href="#">Blog</a>
+                  <a class="d-block" href="#">Online Uniform Stores</a>
+                </div>
+                <div class="col-4">
+                  <h2 class="text fs-4 mb-4 fw-bold">Bestselling Products</h2>
+                  <a class="d-block" href="#">About Us</a>
+                  <a class="d-block" href="#">Frequently Asked Questions</a>
+                  <a class="d-block" href="#">Customer Testimonials</a>
+                  <a class="d-block" href="#">Privacy Policy</a>
+                  <a class="d-block" href="#">Terms & Conditions</a>
+                  <a class="d-block" href="#">Sitemap</a>
+                  <a class="d-block" href="#">Help Us Support Our Veterans</a>
+                  <a class="d-block" href="#">Blog</a>
+                  <a class="d-block" href="#">Online Uniform Stores</a>
+                </div>
+                <div class="col-4">
+                  <h2 class="text fs-4 mb-4 fw-bold">Featured Products</h2>
+                  <a class="d-block" href="#">About Us</a>
+                  <a class="d-block" href="#">Frequently Asked Questions</a>
+                  <a class="d-block" href="#">Customer Testimonials</a>
+                  <a class="d-block" href="#">Privacy Policy</a>
+                  <a class="d-block" href="#">Terms & Conditions</a>
+                  <a class="d-block" href="#">Sitemap</a>
+                  <a class="d-block" href="#">Help Us Support Our Veterans</a>
+                  <a class="d-block" href="#">Blog</a>
+                  <a class="d-block" href="#">Online Uniform Stores</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row pt-5">
+              <div class="col-12 col-md-4">
+                <a href="#" class="d-flex gap-2 fs-5 p-2 btn-colors-inverted text-decoration-none align-items-center ps-3 mb-4"><i class="icon-phone fs-4"></i> (866) 250-3676</a>
+                <a href="#" class="d-flex gap-2 fs-5 p-2 btn-colors-inverted text-decoration-none align-items-center ps-3 mb-4"><i class="icon-message fs-4"></i> Live Chat</a>
+                <a href="#" class="d-flex gap-2 fs-5 p-2 btn-colors-inverted text-decoration-none align-items-center ps-3 mb-4"><i class="icon-contact fs-4"></i> Contact Us</a>
+              </div>
+              <div class="col-12 col-sm-8 col-md-4">
+                <span class="fs-5 fw-bold">Mail</span>
+                <p class="mb-4">7117 Crossroads Blvd Brentwood, TN 37027</p>
+                <span class="fs-5 fw-bold">Business Hours</span>
+                <p class="mb-0">Monday-Friday: 8AM-5PM CST</p>
+                <p class="mb-4">Saturday-Sunday: Closed</p>
+              </div>
+              <div class="col-12 col-sm-4 col-md-4">
+                <div class="d-flex">
+                  <a href="" class="fs-l white-link d-flex p-1 text-decoration-none me-2"><i class="icon-facebook"></i></a>
+                  <a href="" class="fs-l white-link d-flex p-1 text-decoration-none"><i class="icon-twitter"></i></a>
+                </div>
+              </div>
+              <div class="col-12 text-center mt-5 fs-6">
+                <span>Copyright © 2000-2023 Image Connection. All Rights Reserved.</span>
+              </div>
+            </div>
+          </div>
+      </div>
+  </footer>
+</div>
+
+
+
+<!-- side cart preview -->
+<div class="cart-preview offcanvas offcanvas-end bg-body-secondary" tabindex="-1" id="cartPreView" aria-labelledby="cartPreViewLabel">
+  <div class="offcanvas-header flex-column">
+    <spam class="d-block fs-6">Subtotal</spam>
+    <spam class="d-block fs-5 total text-primary fw-bold">$518.76</spam>
+    <!-- <a href="" type="button" class="btn btn-outline-primary">Go to Cart</a> -->
+  </a>
+
+    <!-- <a href="" class="fs-l white-link d-flex p-1 text-decoration-none me-2"><i class="icon-close"></i></a> -->
+  </div>
+  <div class="offcanvas-body">
+    
+    <div class="items-on-cart">
+        <div class="item-preview position-relative mb-4">
+          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
+          <div class="item-details bg-dark position-absolute p-3">
+
+
+            <ul class="list-details border-0 p-0">
+              <li class="d-flex align-items-center">
+                <div class="label">Color:</div>
+                <div class="data">
+                  <div class="d-flex product-color black-white">
+                    <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                      <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                        <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
+                      </g>
+                    </svg>
+                    <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                      <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                        <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="label">Size:</div><div class="data size">L</div>
+              </li>
+              <li class="d-flex align-items-center">
+                <div class="label">Qty:</div><div class="data qty">3</div>
+              </li>
+              <li class="d-flex justify-content-around gap-1">
+                <div class="label"><button class="item-edit"><i class="icon-edit"></i></button></div>
+                <div class="data"><button class="item-delete"><i class="icon-delete"></i></button></div>
+              </li>
+            </ul>
+
+
+          </div>
+          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
+          <div class="item-total bg-secondary-subtle mt-1 rounded-pill px-2">$20.50</div>
+
+          
+        </div>
+
+        <div class="item-preview position-relative">
+          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
+          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
+        </div>
+
+        <div class="item-preview position-relative">
+          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
+          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
+        </div>
+
+        <div class="item-preview position-relative">
+          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
+          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
+        </div>
+
+        <div class="item-preview position-relative">
+          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
+          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
+        </div>
+
+        <div class="item-preview position-relative">
+          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
+          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
+        </div>
+    </div>
+    
+  </div>
+</div>
+<!-- END side cart preview -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="/js/sidebar.js"></script>
+</body>
+</html>

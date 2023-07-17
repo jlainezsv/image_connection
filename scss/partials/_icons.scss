@@ -1,0 +1,159 @@
+/* Starting Icons */
+@font-face {
+    font-family: 'ic-icons';
+    src:  url('fonts/ic-icons.eot?urq5zb');
+    src:  url('fonts/ic-icons.eot?urq5zb#iefix') format('embedded-opentype'),
+      url('/fonts/ic-icons.ttf') format('truetype'),
+      url('/fonts/ic-icons.woff?urq5zb') format('woff'),
+      url('fonts/ic-icons.svg?urq5zb#ic-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+ 
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'ic-icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-work-uniform:before {
+    content: "\e92a";
+  }
+  .icon-bags:before {
+    content: "\e900";
+  }
+  .icon-cap:before {
+    content: "\e901";
+  }
+  .icon-cart:before {
+    content: "\e902";
+  }
+  .icon-check:before {
+    content: "\e903";
+  }
+  .icon-chevron-down:before {
+    content: "\e904";
+  }
+  .icon-chevron-left:before {
+    content: "\e905";
+  }
+  .icon-chevron-right:before {
+    content: "\e906";
+  }
+  .icon-chevron-up:before {
+    content: "\e907";
+  }
+  .icon-close:before {
+    content: "\e908";
+  }
+  .icon-contact:before {
+    content: "\e909";
+  }
+  .icon-delete:before {
+    content: "\e90a";
+  }
+  .icon-direct-print:before {
+    content: "\e90b";
+  }
+  .icon-dress-shirt:before {
+    content: "\e90c";
+  }
+  .icon-edit:before {
+    content: "\e90d";
+  }
+  .icon-embroidery:before {
+    content: "\e90e";
+  }
+  .icon-ems:before {
+    content: "\e90f";
+  }
+  .icon-enter:before {
+    content: "\e910";
+  }
+  .icon-eye:before {
+    content: "\e911";
+  }
+  .icon-facebook:before {
+    content: "\e912";
+  }
+  .icon-filter:before {
+    content: "\e913";
+  }
+  .icon-heat-transfer:before {
+    content: "\e914";
+  }
+  .icon-hospitality:before {
+    content: "\e915";
+  }
+  .icon-menu:before {
+    content: "\e916";
+  }
+  .icon-message:before {
+    content: "\e917";
+  }
+  .icon-minus:before {
+    content: "\e918";
+  }
+  .icon-outerwear:before {
+    content: "\e919";
+  }
+  .icon-patches:before {
+    content: "\e91a";
+  }
+  .icon-phone:before {
+    content: "\e91b";
+  }
+  .icon-plus:before {
+    content: "\e91c";
+  }
+  .icon-poloshirt:before {
+    content: "\e91d";
+  }
+  .icon-question:before {
+    content: "\e91e";
+  }
+  .icon-reflective-transfer:before {
+    content: "\e91f";
+  }
+  .icon-restaurant:before {
+    content: "\e920";
+  }
+  .icon-screen-printing:before {
+    content: "\e921";
+  }
+  .icon-scrubs:before {
+    content: "\e922";
+  }
+  .icon-search:before {
+    content: "\e923";
+  }
+  .icon-sportswear:before {
+    content: "\e924";
+  }
+  .icon-tshirt:before {
+    content: "\e925";
+  }
+  .icon-twitter:before {
+    content: "\e926";
+  }
+  .icon-upload:before {
+    content: "\e927";
+  }
+  .icon-user-plus:before {
+    content: "\e928";
+  }
+  .icon-user:before {
+    content: "\e929";
+  }
+  
+//Ending Icons

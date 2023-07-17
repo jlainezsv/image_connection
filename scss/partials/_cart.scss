@@ -1,0 +1,82 @@
+// Side Preview Cart
+.offcanvas {
+    background-color: rgba(212, 48, 54, 0.8);
+}
+.offcanvas.offcanvas-end {
+    top: 0;
+    right: 0;
+    width: 200px;
+    border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateX(100%);
+}
+
+
+.cart-preview{
+    font-size: 14px;
+    .offcanvas-body{
+       padding: var(--bs-offcanvas-padding-y) 0;
+        overflow-y: visible;
+    }
+    .items-on-cart{
+        background-color: $white;
+        height: 50%;
+        overflow-y: scroll;
+        padding: 25px;
+        
+        .item-details{
+            width: 100%;
+            height: calc(100% - 28px);
+            --bs-bg-opacity: .8;
+            border-radius: var(--bs-border-radius);
+
+            .list-details{
+                list-style: none;
+                color: $white;
+            }
+        }
+        .item-preview{
+            .delete-item{
+                border: 0;
+                &:hover{
+                    background-color: $primary-color !important;
+                    color: $white;
+                }
+                
+            }
+        }
+        .list-details{
+            width: 90%;
+            margin: 0 auto;
+            li{
+                margin-bottom: 5px;
+                .label{
+                    display: block;
+                    width: 40%;
+                }
+                .data{
+                    width: 60%;
+                    text-align: center;
+                    div{margin: 0 auto;}
+                }
+                button{
+                    background-color: #fff;
+                    border: 1px solid #D43036;
+                    color: #D43036;
+                    border-radius: 50%;
+                    width: 36px;
+                    height: 36px;
+                    font-size: 16px;
+                    &:hover{
+                        background-color: $primary-color;
+                        color:$white;
+                    }
+                }
+            }
+        }
+        .item-total{
+
+        }
+    }
+}
+
+// END Side Preview Cart

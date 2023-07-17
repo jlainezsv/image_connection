@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root{
+ --main-color:#D43036;
+ --bs-primary-rgb:212, 48,54;
+
+}
+$primary-color:#D43036;
+$second-color:#02A5D5;
+$white: #fff;
+
+
+body{
+    font-family: 'Lato', sans-serif !important; font-size: 1rem;
+    color:$primary-color;
+    padding:0;
+    margin:0;
+    position: relative;
+    min-height:100vh;
+}
+
+
+a{
+    color: var(--main-color);
+    @include transition(color, .10s);
+    &:hover{
+        color: $second-color;
+    }
+}
+button{
+    @include transition(background-color, .10s);
+    @include transition(color, .10s);
+}
+
+
+.btn-second {
+    border-radius: 12px;
+    border: 0;
+    color: #D43036;
+    background-color: #fff;
+    @include transition(color, .10s);
+    @include transition(background-color, .10s);
+    &:hover{
+        color: $white;
+        background-color: $primary-color;
+    }
+}
+
+.btn-ghost{
+    border-radius: 12px;
+    border: 0;
+    color: $primary-color;
+    background-color: transparent;
+    @include transition(color, .10s);
+    &:hover{
+        color: $second-color;
+    }
+}
+
+.btn-colors-inverted{
+    color: $white;
+    &:hover{
+        background-color: $white;
+        color: $primary-color;
+    }
+}
+
+.offcanvas{
+    background-color: rgba(212, 48,54,0.8);
+}
+
+
+// Font size
+.fs-l{font-size: 3rem;}
+// End Font Size
+
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }
+
+  
+footer{
+    background-color: #000;
+    padding-left: 5%;
+    background-color: $primary-color;
+    color: $white;
+
+    a{
+        padding: 0.1rem;
+        border-radius: 12px;
+        color: $white;
+        text-decoration: none;    
+        &:hover{
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+    .white-link{
+        &:hover{
+            background-color: $white;
+            color: $primary-color;
+        }
+    }
+}

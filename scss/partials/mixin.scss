@@ -1,0 +1,30 @@
+@mixin transition-color($time) {
+    transition: color $time ease-in-out;
+}
+@mixin transition-bg-color($time) {
+    transition: background-color $time ease-in-out;
+}
+
+@mixin transition($type, $time) {
+    transition: $type $time ease-in-out;
+}
+
+@mixin btn-hover{
+    background-color: $primary-color;
+    color: $white;
+    
+}
+@mixin btn-hover-invert{
+    background-color: $white;
+    color: $primary-color;
+}
+
+
+@mixin product-color($color-left, $color-right){
+    .color-left{
+        fill: $color-left;
+    }
+    .color-right{
+        fill: $color-right;
+    }
+}
