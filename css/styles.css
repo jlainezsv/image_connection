@@ -820,6 +820,7 @@ footer .white-link:hover {
 }
 .qty-input-cont input {
   text-align: center;
+  width: 4rem;
 }
 
 .order-table th, .order-table td {

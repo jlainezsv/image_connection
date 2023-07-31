@@ -75,16 +75,12 @@
         }
         .cta-cartpreview-show-details{
             font-size: 1.2rem;
-            //background-color: var(--bs-secondary-bg-subtle);
             @include transition(background-color, 0.15s);
         }
         .active{
             .cta-cartpreview-show-details{
                 background-color: $black !important;
                 color: $white;
-                // &:hover{
-                //     background-color: $primary-color !important;
-                // }
             }
             
         }
