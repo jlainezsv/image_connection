@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Alpine JS  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+    
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="short">
+    <div class="custom-container">
+
+      <!-- Sidebar Desktop -->
+        <div class="sidebar d-none d-lg-block">
+            <div class="sidebartop">
+                <a class="menu">
+                    <i class="icon-menu"></i>
+                </a>
+            </div>
+        </div>
+      <!-- End Sidebar Desktop -->
+        
+
+  <div class="main">
+    <!-- Mobile Menu -->      
+    <nav class="navbar bg-white sticky-top">
+                  <div class="container-fluid">
+                    <a class="navbar-brand">
+                      <img src="/images/logo-color.png" alt="Image Connection">
+                    </a>
+                    <div class="nav-contacts d-flex gap-3 align-items-center">
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-phone me-1"></i>(866) 250-3676</a>
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-message me-1"></i>Live Chat</a>
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-contact me-1"></i>Contact Us</a>
+                      <a href="" class="link-underline link-underline-opacity-0  d-none d-lg-block me-4"><i class="icon-user me-1"></i>Account</a>
+
+                      <div class="nav-contacts d-flex gap-3">
+                          <button href="" class="btn-ghost fs-4 me-2"><i class="icon-search"></i></button>
+                          <button class="btn-ghost fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPreView" aria-controls="cartPreView">
+                            <i class="icon-cart"></i>
+                          </button>
+
+                          <button class="btn btn-second d-lg-none fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                              <i class="icon-menu"></i>
+                          </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                              <div class="offcanvas-header bg-primary">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                  <img src="/images/logo-white.png" alt="Image Connection">
+                                </h5>
+
+                              <button class="btn btn-ghost btn-colors-inverted d-lg-none fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                  <i class="icon-close"></i>
+                              </button>
+
+                              </div>
+                              <div class="offcanvas-body">
+                                  
+                                
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  </div>
+    </nav>
+    <!-- End Mobile Menu  -->
+
+    <!-- Main Container --> 
+    <div class="p-3 p-lg-5">
+        
+        <div class="container-fluid">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Polo Shirts</li>
+                </ol>
+            </nav>
+
+            <h1 class="mb-3">Polo Shirts</h1>
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-5 g-4 mb-5 pb-5"  x-data="{ products: ['Uniform', 'Performance', 'Color Block', 'Long Sleeve', 'Women’s', '100% Cotton ', 'Contemporary', 'Pocket', 'Big & Tall'] }">
+            <!-- Category card -->
+            <template x-for="(product, index) in products">
+                <div class="col card-product-container">
+                <a href="" class="card h-100 text-decoration-none">
+                    <div class="position-relative">
+                      <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                          <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">See Catalog</div>
+                      </div>
+                      <div class="p-2 text-center">
+                        <img src="/images/image-not-found.svg" class="card-img-top" alt="Sorry! We didn't find this image">
+                      </div>
+                    </div>
+                    <div class="card-body">
+                    <p class="card-text text-body fw-bold" x-text="product"></p>
+                    </div>
+                </a>
+                </div>
+            </template>
+            <!-- END Category card -->
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 pt-5 mt-5">
+            <div class="col text-grey fs-6">
+                <p>
+                Custom Embroidered Polo Shirts are the mainstay of most uniform programs and corporate apparel programs.  Work polo's are a comfortable option when you are outfitting a wide variety of employees because they are available in a wide variety of color and style options. Today we have a generous selection of styles that are available in both men's polo shirts and matching women's polo shirts. Moisture wicking performance polo shirts are the favorite in today's marketplace. Performance polos are lightweight, comfortable, easy to care for, colorfast, and generally a great option for corporate wear or company uniform programs.
+                </p>
+                <p>
+                Embroidered polo shirts are a standard in uniforms and promotional shirts. There is a trend toward 100% polyester moisture wicking polo shirts, and we have found that the sales of these shirts are rapidly replacing the standard cotton polo. These performance polyester polos make an excellent uniform shirt. The polyester is inherently fade resistant, wrinkle resistant, and shrink resistant, giving you a clean, crisp look even after multiple washings. Most of these performance shirts are also made from lighter weight fabrics, which also make them more comfortable to wear. We offer sizes in our best-selling polos including 4XL, 5XL, 6XL, 7XL, 8XL, 9XL, and even 10XL. Call for details
+                </p>
+                <p>
+                Polo Shirts in our easy care blends offer superior stain resistance and color retention, usually at an excellent value for your uniform programs. Most of these embroider wonderfully and represent your brand well. These polos work exceptional as restaurant uniforms featuring your embroidered logo. Called “Easy Care”, because these blends retain their color and offer superior wrinkle resistance, so even your most “laundry challenged” employee will look good.
+                </p>            
+            </div>
+            <div class="col text-grey fs-6">
+                <p>
+                We offer an excellent selection of women's polo shirts in a variety of flattering styles and colors that offer a more complementary fit that women are asking for in the marketplace.
+                </p>
+                <p>
+                For superior comfort, you can't beat the standby 100% cotton polo shirt for your uniform program. Many employees prefer the softness and comfort of 100% cotton.
+                </p>
+                <p>
+                Embroidered Polo Shirts are represented in some way in most uniform programs. Most often we do left chest embroidery, but sleeve embroidery and under the back of the neck are popular areas as well. We take special care when embroidering polo shirts. Because the fabric is usually a more open weave, it requires more attention to get clean, smooth embroidery. We will often apply a water soluble “topping” to the fabric before we embroider. This prevents the embroidery thread from laying into the openings in the fabric, so you always get the best embroidery on your polo shirt. Image Connection is a full service supplier of uniforms, embroidered apparel, and promotional products located just south of Nashville TN in Brentwood, near the Cool Springs Mall.
+                </p>            
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- End Main Container -->
+  </div>
+</div>
+
+
+<div class="custom-container">
+  <footer class="footer">
+      <div style="height: 700px;">
+      </div>
+  </footer>
+</div>
+
+
+
+<!-- side cart preview -->
+<div class="cart-preview offcanvas offcanvas-end bg-body-secondary" tabindex="-1" id="cartPreView" aria-labelledby="cartPreViewLabel">
+  <div class="offcanvas-header flex-column">
+    <spam class="d-block fs-6">Subtotal</spam>
+    <spam class="d-block fs-5 total text-primary fw-bold">$518.76</spam>
+
+    <a href="" type="button" class="btn-ghost py-1 px-3">Go to Cart</a>
+  </a>
+
+    <!-- <a href="" class="fs-l white-link d-flex p-1 text-decoration-none me-2"><i class="icon-close"></i></a> -->
+  </div>
+  <div class="offcanvas-body">
+    
+    <div class="items-on-cart">
+    </div>
+    
+    <p></p>
+    <a href="" type="button" class="btn-ghost py-1 px-3">Go to Cart</a>
+  </div>
+</div>
+<!-- END side cart preview -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

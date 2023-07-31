@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components Library</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Alpine JS  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Colors</h2>
+        <p>The color pill have been created with two SVG images to fill with the colors needed</p>
+        <ul>
+            <li>Colors combination have to be created on the CSS and you only need to change the class on the component.</li>
+            <li>Each class represent the name of each color combination: royal-white, </li>
+        </ul>
+        <div class="row mb-5">
+            <h4>Colors Combination</h4>
+            <div class="col-4 d-flex gap-3">
+                <div class="product-color black-white">
+                    <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                      <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                        <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
+                      </g>
+                    </svg>
+                    <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                      <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                        <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
+                      </g>
+                    </svg>
+                </div>
+                Class: black-white
+            </div>
+            <div class="col-4 d-flex gap-3">
+                <div class="product-color royal-white">
+                    <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                      <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                        <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
+                      </g>
+                    </svg>
+                    <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                      <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                        <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
+                      </g>
+                    </svg>
+                </div>
+                Class: royal-white
+            </div>
+            <div class="col-4 d-flex gap-3">
+                <div class="product-color lightBlue-navy">
+                    <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                      <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                        <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
+                      </g>
+                    </svg>
+                    <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                      <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                        <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
+                      </g>
+                    </svg>
+                </div>
+                Class: lightBlue-navy
+            </div>           
+            
+        </div>
+
+        <div class="row">
+            <h4>Solid Colors</h4>
+            <div class="row">
+              <div class="col-4 d-flex gap-3">
+                <h6>Radios</h6>
+                <div class="d-flex gap-3 flex-column">
+                  <div class="form-check swatch-container">
+                    <input class="form-check-input swatch" type="radio" name="product-color" id="radioProductColor-1" style="background-image: url(https://assets.imageconnection.net/pictures/colors/E91C87D2-E132-46D8-B931A1CF7F249581.jpg);">
+                    <label class="form-check-label" for="radioProductColor-1">
+                      Campus Purple
+                      </label>
+                </div>
+                <div class="form-check swatch-container">
+                    <input class="form-check-input" type="radio" name="product-color" checked id="radioProductColor-2" style="background-image: url(https://assets.imageconnection.net/pictures/colors/DBF745D5-9535-452E-9FAAC72E674E9789.jpg);">
+                    <label class="form-check-label" for="radioProductColor-2">
+                      Safety Yellow (checked)
+                      </label>
+                </div>
+                <div class="form-check swatch-container">
+                    <input class="form-check-input swatch" type="radio" name="product-color" id="radioProductColor-3" style="background-image: url(https://assets.imageconnection.net/pictures/colors/2E2BDFEA-11DB-47AC-BD9E757626345934.jpg);">
+                    <label class="form-check-label" for="radioProductColor-3">
+                      True Royal
+                      </label>
+                </div>
+                <div class="form-check swatch-container">
+                    <input class="form-check-input swatch" type="radio" name="product-color" id="radioProductColor-4" style="background-image: url(https://assets.imageconnection.net/pictures/colors/0BC2186B-8389-40CA-A4C65F31265919BA.jpg);">
+                    <label class="form-check-label" for="radioProductColor-4">
+                      Campus Gold
+                      </label>
+                </div>
+                <div class="form-check swatch-container">
+                    <input class="form-check-input swatch" type="radio" name="product-color" id="radioProductColor-5" style="background-image: url(https://assets.imageconnection.net/pictures/colors/89365-kdf.jpg);">
+                    <label class="form-check-label" for="radioProductColor-5">
+                        Black
+                      </label>
+                </div>
+              </div>
+              </div> 
+              <div class="col-4 d-flex gap-3">
+                <h6>Checkbox</h6>
+                <div class="d-flex gap-3 flex-column">
+                  <div class="form-check swatch-container">
+                    <input class="form-check-input swatch" type="checkbox" value="" id="checkProductColor-1" style="background-image: url(https://assets.imageconnection.net/pictures/colors/E91C87D2-E132-46D8-B931A1CF7F249581.jpg);">
+                    <label class="form-check-label" for="checkProductColor-1">
+                      Campus Purple
+                    </label>
+                  </div>
+                  <div class="form-check swatch-container">
+                    <input class="form-check-input swatch" type="checkbox" value="" id="checkProductColor-2" style="background-image: url(https://assets.imageconnection.net/pictures/colors/DBF745D5-9535-452E-9FAAC72E674E9789.jpg);">
+                    <label class="form-check-label" for="checkProductColor-2">
+                      Safety Yellow (checked)
+                    </label>
+                  </div>
+                  <div class="form-check swatch-container">
+                    <input class="form-check-input swatch" type="checkbox" value="" id="checkProductColor-3" style="background-image: url(https://assets.imageconnection.net/pictures/colors/2E2BDFEA-11DB-47AC-BD9E757626345934.jpg);">
+                    <label class="form-check-label" for="checkProductColor-3">
+                      True Royal
+                    </label>
+                  </div>
+                  <div class="form-check swatch-container">
+                    <input class="form-check-input swatch" type="checkbox" value="" id="checkProductColor-4" style="background-image: url(https://assets.imageconnection.net/pictures/colors/0BC2186B-8389-40CA-A4C65F31265919BA.jpg);">
+                    <label class="form-check-label" for="checkProductColor-4">
+                      Campus Gold
+                    </label>
+                  </div>
+                  <div class="form-check swatch-container">
+                    <input class="form-check-input swatch" type="checkbox" value="" id="checkProductColor-4" style="background-image: url(https://assets.imageconnection.net/pictures/colors/89365-kdf.jpg);">
+                    <label class="form-check-label" for="checkProductColor-4">
+                      Black
+                    </label>
+                  </div>
+              </div>
+              </div> 
+            </div>
+        </div>
+        
+    </div>
+    <br><br><br><br> 
+    <div class="container">
+      <h2>Checks</h2>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          Checked checkbox
+        </label>
+      </div>
+    </div>
+    <br><br><br><br>
+    <div class="container">
+      <h2>Radios</h2>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Default radio
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Default checked radio
+        </label>
+      </div>
+    </div>
+    <br><br><br><br>
+    <div class="container">
+      <h2>Range</h2>
+      <div class="range">
+        <label for="customRange1" class="form-label">Example range</label>
+        <input type="range" class="form-range" id="customRange1">
+        <div class="range-labels d-flex justify-content-between">
+          <span class="min">$0</span>
+          <span class="max">$400</span>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <div class="container">
+      <h2>Checkbox Group</h2> 
+      <div class="col-6">
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+          <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btncheck1">4XL</label>
+        
+          <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btncheck2">3XL</label>
+        
+          <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btncheck3">2XL</label>
+  
+          <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btncheck4">XL</label>
+  
+          <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btncheck5">L</label>
+  
+          <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btncheck6">M</label>
+  
+          <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btncheck7">S</label>
+        </div>
+
+      </div>
+      
+    </div>
+    <br><br><br><br>
+    <div class="container">
+      <h2>Plus / Less Input</h2> 
+      <div class="qty-input-cont" x-data="{ qty: 1 }">
+        <span type="button" class="button-minus btn btn-ghost" data-field="quantity" x-on:click="qty--;if(qty < 1){qty = 1;}"><i class="icon-minus"></i></span>
+        <input type="number" name="passengers" id="passengers" class="" required min="1" max="12" :value="qty">
+        <span type="button" class="button-plus btn btn-ghost" data-field="quantity" x-on:click="qty++;if(qty > 12){qty = 12;}"><i class="icon-plus"></i></span>
+      </div>
+      
+    </div>
+    <br><br><br><br>
+    <div class="container">
+      <h2>Buttons</h2> 
+      <p>Buttons Primary</p>
+      <div>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+      </div>
+      
+      <p>Outline Buttons</p>
+      <div>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <p>Costumization</p>
+      <div class="row">
+        <div class="col-6">
+          <p>Radios</p>
+          <div class="customization-buttons-container row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-4">
+            <div class="col mb-4">
+                <input type="radio" class="btn-check" name="customization-options" id="btn-custom-embroidery" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btn-custom-embroidery"><i class="icon-embroidery"></i><span>Embroidery</span></label>
+            </div>
+            <div class="col mb-4">
+                <input type="radio" class="btn-check" name="customization-options" id="btn-custom-heat-transfer" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn-custom-heat-transfer"><i class="icon-heat-transfer"></i><span>Heat Transfer</span></label>
+            </div>
+            <div class="col mb-4">
+                <input type="radio" class="btn-check" name="customization-options" id="btn-custom-direct-print" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btn-custom-direct-print"><i class="icon-direct-print"></i><span>Direct Digital Print</span></label>
+            </div>
+            <div class="col mb-4">
+                <input type="radio" class="btn-check" name="customization-options" id="btn-custom-screen-printing" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btn-custom-screen-printing"><i class="icon-screen-printing"></i><span>Screen Printing</span></label>
+            </div>
+            <div class="col mb-4">
+                <input type="radio" class="btn-check" name="customization-options" id="btn-custom-reflective-transfer" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btn-custom-reflective-transfer"><i class="icon-reflective-transfer"></i><span>Reflective Transfers</span></label>
+            </div>
+            <div class="col mb-4">
+                <input type="radio" class="btn-check" name="customization-options" id="btn-custom-patches" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn-custom-patches"><i class="icon-patches"></i><span>Patches & Emblems</span></label>
+            </div>
+    
+        </div>
+        </div>
+        <div class="col-6">
+          <p>Divs</p>
+          <div class="customization-buttons-container row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-4">
+            <div class="col mb-4">
+                <div class="customization-button border rounded">
+                    <i class="icon-embroidery"></i><span>Embroidery</span>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="customization-button border rounded">
+                    <i class="icon-heat-transfer"></i><span>Heat Transfer</span>
+                </div>
+            </div>
+            <div class="col mb-4">
+              <div class="customization-button border rounded">
+                <i class="icon-direct-print"></i><span>Direct Digital Print</span>
+              </div>
+          </div>
+          <div class="col mb-4">
+            <div class="customization-button border rounded">
+              <i class="icon-screen-printing"></i><span>Screen Printing</span>
+            </div>
+        </div>
+        <div class="col mb-4">
+          <div class="customization-button border rounded">
+            <i class="icon-reflective-transfer"></i><span>Reflective Transfers</span>
+          </div>
+      </div>
+      <div class="col mb-4">
+        <div class="customization-button border rounded">
+          <i class="icon-patches"></i><span>Patches & Emblems</span>
+        </div>
+    </div>
+        </div>
+        </div>
+      </div>
+      
+    </div>
+    <br><br><br><br>
+    <div class="container">
+      <div class="col-12">
+        <h4>Alerts</h4>
+        <div class="alert alert-primary" role="alert">
+          A simple primary alert—check it out!
+        </div>
+      </div>
+      <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+      </div>
+      <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+      </div>
+      <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+      </div>
+    </div>
+    
+    <br><br><br><br>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

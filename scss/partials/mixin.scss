@@ -19,12 +19,20 @@
     color: $primary-color;
 }
 
-
-@mixin product-color($color-left, $color-right){
+@mixin product-colors-combination($color-left, $color-right){
     .color-left{
         fill: $color-left;
     }
     .color-right{
         fill: $color-right;
+    }
+}
+
+@mixin product-solid-color($color){
+    .color-left{
+        fill: $color;
+    }
+    .color-right{
+        fill: $color;
     }
 }

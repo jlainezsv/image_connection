@@ -1,0 +1,267 @@
+.card-product-container{
+   .card-img-top{
+    height: 150px;
+    width: auto;
+   }
+   .hover-card{
+        background-color: rgb(212, 48,54); 
+        opacity: 0;
+        @include transition(opacity, 0.15s);
+    }
+   .card{
+        &:hover{
+            .hover-card{
+                background-color: rgb(212, 48,54); opacity: 0.8;
+                .btn-outline-light{
+                    &:hover{
+                        background-color: $white;
+                        color: $primary-color;
+                        border-color: $white;
+                    }
+                }
+            }
+        }
+   }
+   .card-title,.card-text{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 100%;
+   }
+
+}
+
+//Breadcrum
+.breadcrumb{
+    li{
+        align-items: center;
+        display: flex;
+    }
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    font-family: "ic-icons" !important;
+    content: "\e906";
+    font-size: 12px;
+}
+// End Breadcrum
+
+// Accordions Adjustment
+.accordion-button{font-family: "Lato", sans-serif !important;}
+.accordion-button::after{
+    font-family: "ic-icons" !important;
+    content: "\e904";
+    font-size: 12px;
+    background-image: none;
+    width: auto;
+    height: auto;
+}
+.accordion-button:not(.collapsed)::after{background-image: none;}
+
+.icon-math::after{content: "\e91c";}
+.icon-math:not(.collapsed)::after{content: "\e918";}
+// End Accordions Adjustment
+
+
+
+// Product Filters
+.accordion-button:not(.collapsed) {
+    color: $dark-grey;
+    background-color: $bg-lighter;
+}
+.product-filters-container{
+    .accordion-item{
+        border-radius: 6px !important;
+        border-top: initial;
+    }
+    .auto-scroll{
+        padding: 0.5rem 0 0.5rem 0.5rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 200px;
+    }
+    
+}
+
+.applied-filters{
+    background-color: $bg-lighter;
+}
+
+.applied-filters-badges-container{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90px;
+    
+    .badge{
+        background-color: rgba($second-color, 0.1);
+        color: $second-color;
+        @include transition(background-color, 0.15s);
+        &:hover{
+            background-color: $second-color;
+            color: $white;
+        }
+    }
+}
+.auto-close{
+    white-space: inherit;
+    text-align: left;
+    
+    i{
+        font-size: 80%;
+        padding-left: 7px;
+    }
+}
+// END Product Filters
+
+
+// Dropdown
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: $primary-color;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--bs-dropdown-link-active-color);
+    background-color: $second-color;
+}
+// END Dropdown
+
+
+// Pagination
+.pagination{
+    .page-link{
+        width: 40px;
+        height: 40px;
+        color: $primary-color;
+        font-size: 1.2rem;
+        border-radius: 10px !important;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-color: $primary-color;
+        &:hover{
+            background-color: $primary-color;
+            color: $white;
+        }
+    }
+}
+// END Pagination
+
+.list-checked{
+    list-style: url(/images/icon-check.svg);
+    li{padding-bottom: 0.6rem;}
+}
+
+
+
+// Carousel of Main Image
+.carousel-products{
+    .carousel-caption {
+        position: inherit;
+        right: 0;
+        left: 0;
+    }
+    .carousel-indicators {
+        bottom: 65px;
+    }
+    .carousel-indicators{
+        background-color: #000;
+        position: inherit;
+        margin-right: 0;
+        margin-left: 0;
+        a {
+            width: 75px;
+            height: 94px;
+        }
+    } 
+}
+// END Carousel of Main Image
+
+// Plus / Less Input
+.qty-input-cont{
+    display: flex;
+    gap: 0.3rem;
+    input{
+        text-align: center;
+    }
+}
+// END Plus / Less Input
+
+// Table with available size and qty to order
+.order-table{
+    th,td{
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+// END Table with available size and qty to order
+
+
+// BTN Customization
+.customization-buttons-container{
+    .btn, .customization-button{
+        border: 1px solid $bg-lighter;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 0.5rem;
+        i{
+            height: 60px;
+            width: 60px;
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    }
+}
+// END BTN Customization
+
+// Drag & Drop component
+.drag-area {
+    width: 100%;
+    height: 250px;
+    border-width: 3px !important;
+    border-style: dashed !important;
+    label{
+        //background-color: #ccc;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .icon{
+        font-size: 5rem;
+        color: $light-grey;
+    }
+    .filename{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        background: $bg-lighter;
+        width: 80%;
+        
+    }
+    .file-info{width: 80%;}
+}
+// END Drag & Drop component
+
+// Modal logos on file
+.modal-logos-on-file{
+    .modal-body{
+        height: 50vh;
+        .all-logos{overflow-y: scroll;}
+    }
+}
+// END Modal logos on file
+
+// Cart
+.cart-item{
+    //min-height: 100px;
+    .item-img{
+        img{
+            width: 65%;
+        }
+    }
+}
+// END Cart

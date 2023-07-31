@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collapse / Expand Sidebar Tutorial</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
+    <!-- Alpine JS  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+    
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body class="short">
@@ -222,10 +225,14 @@
                       <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-contact me-1"></i>Contact Us</a>
                       <a href="" class="link-underline link-underline-opacity-0  d-none d-lg-block me-4"><i class="icon-user me-1"></i>Account</a>
 
-                      <div class="nav-contacts d-flex gap-3">
+                      <div class="nav-contacts d-flex gap-3 pe-3">
                           <button href="" class="btn-ghost fs-4 me-2"><i class="icon-search"></i></button>
-                          <button class="btn-ghost fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPreView" aria-controls="cartPreView">
+                          <button class="btn-ghost fs-4 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPreView" aria-controls="cartPreView">
                             <i class="icon-cart"></i>
+                            <span class="position-absolute fs-xs mt-1 start-90 translate-middle badge rounded-pill bg-dark">
+                              5
+                              <span class="visually-hidden ">unread messages</span>
+                            </span>
                           </button>
 
                           <button class="btn btn-second d-lg-none fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -246,8 +253,8 @@
                               <div class="offcanvas-body">
                                   
                                   <form class="d-flex my-3" role="search">
-                                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                      <button class="btn btn-outline" type="submit">Search</button>
+                                      <input class="form-control me-2 border-0" type="search" placeholder="Search" aria-label="Search">
+                                      <button class="btn btn-outline-light" type="submit">Search</button>
                                   </form>
                                   
                                     <div class="accordion" id="accordionMenuMobile">
@@ -503,36 +510,166 @@
     <!-- End Mobile Menu  -->
 
     <!-- Main Container --> 
-    <div style="height:1600px;" class="p-5">
-        <h1>content here</h1>
+    <div class="p-3 p-lg-5">
+        <div class="container  min-h-100">
+          <div class="row justify-content-evenly py-5 flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-5 d-flex align-items-center">
+              <div class="">
+                <h1>Company Uniforms & Embroidered Apparel</h1>
+                <p>Providing uniforms & embroidered apparel since 1999.</p>
+                <div class="d-flex">
+                  <a href="" class="d-flex flex-column align-items-center p-3 text-decoration-none">
+                    <img src="/images/free-shipping.svg" alt="" width="100">
+                    Direct Shipments
+                  </a>
+                  <a href="" class="d-flex flex-column align-items-center p-3 text-decoration-none">
+                    <img src="/images/365.svg" alt="" width="100">
+                    Program Management System
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div id="carousel-images" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <img src="/images/home-carousel-image-1.png" class="d-block w-100" alt="Carousel Image Demo">
+                      <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p> -->
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="/images/home-carousel-image-2.png" class="d-block w-100" alt="Carousel Image Demo">
+                      <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p> -->
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="/images/home-carousel-image-3.png" class="d-block w-100" alt="Carousel Image Demo">
+                      <div class="carousel-caption d-none d-md-block">
+                        <!-- <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p> -->
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-images" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carousel-images" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
         
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 mb-5 pb-5">
+            <div class="col card-product-container">
+              <a href="" class="card h-100 text-decoration-none">
+                <div class="position-relative">
+                  <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                    <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit and Buy</div>
+                  </div>
+                  <div class="p-2 text-center">
+                        <img src="/images/image-not-found.svg" class="card-img-top" alt="Sorry! We didn't find this image">
+                      </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="text-red card-title">Micropique Performance Polo Shirt</h6>
+                  <p class="text-grey mb-0">Item #IC-TG17</p>
+                  <p class="card-text text-body">As low as <span class="price text-red fw-bold">$19.68</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="col card-product-container">
+              <a href="" class="card h-100 text-decoration-none">
+                <div class="position-relative">
+                  <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                    <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit and Buy</div>
+                  </div>
+                  <div class="p-2 text-center">
+                        <img src="/images/image-not-found.svg" class="card-img-top" alt="Sorry! We didn't find this image">
+                      </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="text-red card-title">Micropique Performance Polo Shirt</h6>
+                  <p class="text-grey mb-0">Item #IC-TG17</p>
+                  <p class="card-text text-body">As low as <span class="price text-red fw-bold">$19.68</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="col card-product-container">
+              <a href="" class="card h-100 text-decoration-none">
+                <div class="position-relative">
+                  <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                    <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit and Buy</div>
+                  </div>
+                  <div class="p-2 text-center">
+                        <img src="/images/image-not-found.svg" class="card-img-top" alt="Sorry! We didn't find this image">
+                      </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="text-red card-title">Micropique Performance Polo Shirt</h6>
+                  <p class="text-grey mb-0">Item #IC-TG17</p>
+                  <p class="card-text text-body">As low as <span class="price text-red fw-bold">$19.68</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="col card-product-container">
+              <a href="" class="card h-100 text-decoration-none">
+                <div class="position-relative">
+                  <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                    <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit and Buy</div>
+                  </div>
+                  <div class="p-2 text-center">
+                        <img src="/images/image-not-found.svg" class="card-img-top" alt="Sorry! We didn't find this image">
+                      </div>
+                </div>
+                <div class="card-body">
+                  <h6 class="text-red card-title">Micropique Performance Polo Shirt</h6>
+                  <p class="text-grey mb-0">Item #IC-TG17</p>
+                  <p class="card-text text-body">As low as <span class="price text-red fw-bold">$19.68</span></p>
+                </div>
+              </a>
+            </div>
+          </div>
 
-        
-        <div class="product-color royal-white">
-            <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
-              <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
-                <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
-              </g>
-            </svg>
-            <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
-              <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
-                <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
-              </g>
-            </svg>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 pt-5 mt-5">
+            <div class="col text-grey fs-6">
+              <p>Image is Everything!</p>
+              <p>
+                Our leadership in B2B sales of company uniforms and image apparel is a result of years of listening, innovation, and service. We sell uniforms to national parks, retail chains, local business and institutions, all with the same passion for excellent service.
+              </p>  
+              <p>
+                Our customer service is second to none due in part our in-house decorating, our dedicated people, and our proprietary technology. Our Image365™ order management system drives our websites, our production, and our customer service like nothing else in the industry. What does that mean to you? Faster orders, comprehensive uniform program management services, and customized company stores.
+              </p>  
+              <p>
+                Our promise to you is to provide quality apparel products for your employees, top-quality embroidery, screen printing or other garment decoration, and world class service all at a fair price. A package most customers simply refer to as a great value.</p>
+              </p>
+            </div>
+            <div class="col text-grey fs-6">
+              <p>Quick Facts About Image Connection:</p>
+              <ul class="list-checked">
+                <li>We've been selling company uniforms, embroidered apparel, and promotional products to small businesses, national parks, and Fortune 500 companies since 1999.</li>
+                <li>We do our embroidery in-house and inspect every garment to ensure the utmost quality.</li>
+                <li>We pride ourselves on providing exceptional customer service.</li>
+                <li>We guarantee the quality of our products and our decorations.</li>
+                <li>We simplify every step of your employee uniform program from ordering to delivery.</li>
+                <li>Our proprietary web-based software platform, Image365, can help you manage allowances and allotments for your company uniform program.</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="product-color lightBlue-navy">
-            <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
-              <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
-                <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
-              </g>
-            </svg>
-            <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
-              <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
-                <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
-              </g>
-            </svg>
-        </div>
-        
     </div>
     <!-- End Main Container -->
   </div>
@@ -548,7 +685,7 @@
                 <div class="accordion-item bg-transparent mb-4">
                   <h2 class="accordion-header " id="accordion-footer-one">
                     <button class="accordion-button bg-transparent justify-content-between collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#additional-information" aria-expanded="flase" aria-controls="additional-information">
-                      <span class="text text-white fs-5">Additional Information</span><i class="icon-chevron-down"></i>
+                      <span class="text text-white fs-5">Additional Information</span>
                     </button>
                   </h2>
                   <div id="additional-information" class="accordion-collapse collapse" aria-labelledby="heading-additional-information" data-bs-parent="#accordionFooter">
@@ -568,7 +705,7 @@
                 <div class="accordion-item bg-transparent mb-4">
                   <h2 class="accordion-header " id="accordion-footer-two">
                     <button class="accordion-button bg-transparent justify-content-between collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bestselling-products" aria-expanded="flase" aria-controls="bestselling-products">
-                      <span class="text text-white fs-5">Bestselling Products</span><i class="icon-chevron-down"></i>
+                      <span class="text text-white fs-5">Bestselling Products</span>
                     </button>
                   </h2>
                   <div id="bestselling-products" class="accordion-collapse collapse" aria-labelledby="heading-bestselling-products" data-bs-parent="#accordionFooter">
@@ -588,7 +725,7 @@
                 <div class="accordion-item bg-transparent mb-4">
                   <h2 class="accordion-header " id="accordion-footer-three">
                     <button class="accordion-button bg-transparent justify-content-between collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#featured-products" aria-expanded="flase" aria-controls="featured-products">
-                      <span class="text text-white fs-5">Featured Products</span><i class="icon-chevron-down"></i>
+                      <span class="text text-white fs-5">Featured Products</span>
                     </button>
                   </h2>
                   <div id="featured-products" class="accordion-collapse collapse" aria-labelledby="heading-featured-products" data-bs-parent="#accordionFooter">
@@ -612,7 +749,7 @@
             <div class="d-none d-lg-block mb-5">
               <div class="row">
                 <div class="col-4">
-                  <h2 class="text fs-4 mb-4 fw-bold">Additional Information</h2>
+                  <h2 class="text fs-4 mb-4 fw-bold text-white">Additional Information</h2>
                   <a class="d-block" href="#">About Us</a>
                   <a class="d-block" href="#">Frequently Asked Questions</a>
                   <a class="d-block" href="#">Customer Testimonials</a>
@@ -624,7 +761,7 @@
                   <a class="d-block" href="#">Online Uniform Stores</a>
                 </div>
                 <div class="col-4">
-                  <h2 class="text fs-4 mb-4 fw-bold">Bestselling Products</h2>
+                  <h2 class="text fs-4 mb-4 fw-bold text-white">Bestselling Products</h2>
                   <a class="d-block" href="#">About Us</a>
                   <a class="d-block" href="#">Frequently Asked Questions</a>
                   <a class="d-block" href="#">Customer Testimonials</a>
@@ -636,7 +773,7 @@
                   <a class="d-block" href="#">Online Uniform Stores</a>
                 </div>
                 <div class="col-4">
-                  <h2 class="text fs-4 mb-4 fw-bold">Featured Products</h2>
+                  <h2 class="text fs-4 mb-4 fw-bold text-white">Featured Products</h2>
                   <a class="d-block" href="#">About Us</a>
                   <a class="d-block" href="#">Frequently Asked Questions</a>
                   <a class="d-block" href="#">Customer Testimonials</a>
@@ -685,7 +822,8 @@
   <div class="offcanvas-header flex-column">
     <spam class="d-block fs-6">Subtotal</spam>
     <spam class="d-block fs-5 total text-primary fw-bold">$518.76</spam>
-    <!-- <a href="" type="button" class="btn btn-outline-primary">Go to Cart</a> -->
+
+    <a href="" type="button" class="btn-ghost py-1 px-3">Go to Cart</a>
   </a>
 
     <!-- <a href="" class="fs-l white-link d-flex p-1 text-decoration-none me-2"><i class="icon-close"></i></a> -->
@@ -693,81 +831,149 @@
   <div class="offcanvas-body">
     
     <div class="items-on-cart">
-        <div class="item-preview position-relative mb-4">
-          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
-          <div class="item-details bg-dark position-absolute p-3">
 
-
-            <ul class="list-details border-0 p-0">
-              <li class="d-flex align-items-center">
-                <div class="label">Color:</div>
-                <div class="data">
-                  <div class="d-flex product-color black-white">
-                    <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
-                      <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
-                        <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
-                      </g>
-                    </svg>
-                    <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
-                      <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
-                        <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
-                      </g>
-                    </svg>
+        <div class="item-preview mb-4" x-data="{ showDetails: false }" :class="[showDetails ? 'active' : '']">
+          <div class="position-relative">
+            <!-- div with details and options to modify or delete  -->
+            <div  class="item-details bg-dark position-absolute p-3 align-items-center" x-show="showDetails" x-transition>
+              <!-- <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button> -->
+              <ul class="list-details border-0 p-0">
+                <li class="d-flex align-items-center">
+                  <div class="label">Color:</div>
+                  <div class="data">
+                    <div class="d-flex product-color black-white">
+                      <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                        <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                          <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
+                        </g>
+                      </svg>
+                      <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                        <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                          <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
+                        </g>
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li class="d-flex align-items-center">
-                <div class="label">Size:</div><div class="data size">L</div>
-              </li>
-              <li class="d-flex align-items-center">
-                <div class="label">Qty:</div><div class="data qty">3</div>
-              </li>
-              <li class="d-flex justify-content-around gap-1">
-                <div class="label"><button class="item-edit"><i class="icon-edit"></i></button></div>
-                <div class="data"><button class="item-delete"><i class="icon-delete"></i></button></div>
-              </li>
-            </ul>
-
-
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="label">Size:</div><div class="data size">L</div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="label">Qty:</div><div class="data qty">3</div>
+                </li>
+                <li class="d-flex justify-content-around gap-1">
+                  <div class="label"><button class="item-edit"><i class="icon-edit"></i></button></div>
+                  <div class="data"><button class="item-delete"><i class="icon-delete"></i></button></div>
+                </li>
+              </ul>
+            </div>
+            <!-- END div with details and options to modify or delete  -->
+            <img src="/images/demo-polo.png" class="img-thumbnail position-relative" alt="Polo Shirt">
           </div>
-          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
-          <div class="item-total bg-secondary-subtle mt-1 rounded-pill px-2">$20.50</div>
-
           
+          <div href="" class="cta-cartpreview-show-details text-decoration-none mt-1 rounded px-2 d-flex justify-content-between align-items-center" 
+            x-on:click="showDetails = ! showDetails" 
+          >$200.50 <i class="icon-eye"></i></div>
         </div>
 
-        <div class="item-preview position-relative">
-          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
-          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
+        <div class="item-preview mb-4" x-data="{ showDetails: false }" :class="[showDetails ? 'active' : '']">
+          <div class="position-relative">
+            <!-- div with details and options to modify or delete  -->
+            <div  class="item-details bg-dark position-absolute p-3 align-items-center" x-show="showDetails" x-transition>
+              <!-- <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button> -->
+              <ul class="list-details border-0 p-0">
+                <li class="d-flex align-items-center">
+                  <div class="label">Color:</div>
+                  <div class="data">
+                    <div class="d-flex product-color black-white">
+                      <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                        <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                          <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
+                        </g>
+                      </svg>
+                      <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                        <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                          <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="label">Size:</div><div class="data size">L</div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="label">Qty:</div><div class="data qty">3</div>
+                </li>
+                <li class="d-flex justify-content-around gap-1">
+                  <div class="label"><button class="item-edit"><i class="icon-edit"></i></button></div>
+                  <div class="data"><button class="item-delete"><i class="icon-delete"></i></button></div>
+                </li>
+              </ul>
+            </div>
+            <!-- END div with details and options to modify or delete  -->
+            <img src="/images/demo-polo.png" class="img-thumbnail position-relative" alt="Polo Shirt">
+          </div>
+          
+          <div href="" class="cta-cartpreview-show-details text-decoration-none mt-1 rounded px-2 d-flex justify-content-between align-items-center" 
+            x-on:click="showDetails = ! showDetails" 
+          >$200.50 <i class="icon-eye"></i></div>
         </div>
 
-        <div class="item-preview position-relative">
-          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
-          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
+        <div class="item-preview mb-4" x-data="{ showDetails: false }" :class="[showDetails ? 'active' : '']">
+          <div class="position-relative">
+            <!-- div with details and options to modify or delete  -->
+            <div  class="item-details bg-dark position-absolute p-3 align-items-center" x-show="showDetails" x-transition>
+              <!-- <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button> -->
+              <ul class="list-details border-0 p-0">
+                <li class="d-flex align-items-center">
+                  <div class="label">Color:</div>
+                  <div class="data">
+                    <div class="d-flex product-color black-white">
+                      <svg class="color-left" data-name="Group 623" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                        <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                          <path id="Path_153" data-name="Path 153" d="M55.5,0a55.5,55.5,0,0,0,0,111Z"/>
+                        </g>
+                      </svg>
+                      <svg class="color-right" data-name="Group 624" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.5 111">
+                        <g id="Group_622" data-name="Group 622" clip-path="url(#clip-path)">
+                          <path id="Path_153" data-name="Path 153" d="M0,0A55.5,55.5,0,0,1,0,111Z"/>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="label">Size:</div><div class="data size">L</div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="label">Qty:</div><div class="data qty">3</div>
+                </li>
+                <li class="d-flex justify-content-around gap-1">
+                  <div class="label"><button class="item-edit"><i class="icon-edit"></i></button></div>
+                  <div class="data"><button class="item-delete"><i class="icon-delete"></i></button></div>
+                </li>
+              </ul>
+            </div>
+            <!-- END div with details and options to modify or delete  -->
+            <img src="/images/demo-polo.png" class="img-thumbnail position-relative" alt="Polo Shirt">
+          </div>
+          
+          <div href="" class="cta-cartpreview-show-details text-decoration-none mt-1 rounded px-2 d-flex justify-content-between align-items-center" 
+            x-on:click="showDetails = ! showDetails" 
+          >$200.50 <i class="icon-eye"></i></div>
         </div>
 
-        <div class="item-preview position-relative">
-          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
-          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
-        </div>
-
-        <div class="item-preview position-relative">
-          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
-          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
-        </div>
-
-        <div class="item-preview position-relative">
-          <button type="button" class="delete-item btn btn-light position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"><i class="icon-close"></i></button>
-          <div><img src="/images/demo-polo.png" class="img-thumbnail" alt="Polo Shirt"></div>
-        </div>
     </div>
     
+    <p></p>
+    <a href="" type="button" class="btn-ghost py-1 px-3">Go to Cart</a>
   </div>
 </div>
 <!-- END side cart preview -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="/js/sidebar.js"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>

@@ -29,15 +29,6 @@
                     border-radius:12px 12px 0 0;
                     
                     i{font-size: 1.5rem; margin-right: 1rem;}
-                     
-                    &:hover{
-                        background-color: $white;
-                        color: $primary-color;
-                    }
-    
-                    &::after{
-                        display: none;
-                    }
                 }
                 .accordion-body{
                     background-color: $white;
@@ -57,7 +48,41 @@
         }
     }
     
+// Components: Card
+.card-image-container{
+    .card{
+        display: flex;
+        flex-direction: row;
+        .card-body{
+            width: 60%;
+        }
+    }
+ }
 
+.card-product-container{
+    .card{
+        display: flex;
+        flex-direction: row;
+
+        &:hover{
+            .hover-card{display: none !important;}
+            background-color: $bg-lighter;
+            border-color: $bg-lighter;
+        }
+        .card-img-top, img{
+            max-width: 60px;
+            height: auto;
+        }
+        .card-image-container{
+            display: flex;
+            align-items: center;
+        }
+        .card-body{
+            width: 60%;
+        }
+    }
+ }
+// END Components: Card
 
     footer{
         padding:40px 0;
@@ -70,9 +95,9 @@
                 i{
                     @include transition(rotate, 0.15s);
                 }
-                &::after{
-                    display: none;
-                }
+                // &::after{
+                //     display: none;
+                // }
             }
             .accordion-button:not(.collapsed){
                 i{
@@ -98,6 +123,45 @@
         
 
     }
+
+    .swatch-container {
+        .swatch{
+            width: 30px;
+            height: 30px;
+        }
+    }
     
-    
+    // Category Filters
+    .product-filters-container{
+        .accordion-button{
+            color: $primary-color !important;
+        }
+    }
+    // End Category Filters
+}
+
+@media (max-width: 575px) {
+    // BTN Customization
+    .customization-buttons-container{
+        .btn{
+            padding:0.5rem;
+            span{display: none;}
+        }
+    }
+    // END BTN Customization
+
+    //Cart
+    .cart-item{
+        .item-img{
+            margin-bottom: 1rem;
+            img{
+                width: auto;
+                max-height:13rem;
+            }
+        }
+        .item-order-details{
+            flex-wrap: wrap;
+        }
+    }
+    //END Cart
 }

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Alpine JS  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+
+     <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="short">
+    <div class="custom-container">
+
+      <!-- Sidebar Desktop -->
+        <div class="sidebar d-none d-lg-block">
+            <div class="sidebartop">
+                <a class="menu">
+                    <i class="icon-menu"></i>
+                </a>
+            </div>
+        </div>
+      <!-- End Sidebar Desktop -->
+        
+
+  <div class="main">
+    <!-- Mobile Menu -->      
+    <nav class="navbar bg-white sticky-top">
+                  <div class="container-fluid">
+                    <a class="navbar-brand">
+                      <img src="/images/logo-color.png" alt="Image Connection">
+                    </a>
+                    <div class="nav-contacts d-flex gap-3 align-items-center">
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-phone me-1"></i>(866) 250-3676</a>
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-message me-1"></i>Live Chat</a>
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-contact me-1"></i>Contact Us</a>
+                      <a href="" class="link-underline link-underline-opacity-0  d-none d-lg-block me-4"><i class="icon-user me-1"></i>Account</a>
+
+                      <div class="nav-contacts d-flex gap-3">
+                          <button href="" class="btn-ghost fs-4 me-2"><i class="icon-search"></i></button>
+                          <button class="btn-ghost fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPreView" aria-controls="cartPreView">
+                            <i class="icon-cart"></i>
+                          </button>
+
+                          <button class="btn btn-second d-lg-none fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                              <i class="icon-menu"></i>
+                          </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                              <div class="offcanvas-header bg-primary">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                  <img src="/images/logo-white.png" alt="Image Connection">
+                                </h5>
+
+                              <button class="btn btn-ghost btn-colors-inverted d-lg-none fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                  <i class="icon-close"></i>
+                              </button>
+
+                              </div>
+                              <div class="offcanvas-body">
+                                  
+                                
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  </div>
+    </nav>
+    <!-- End Mobile Menu  -->
+
+    <!-- Main Container --> 
+    <div class="p-0 p-lg-5">
+        <div class="container-fluid">
+          <!-- Main content -->
+          <div class="col-12">
+            <div class="mb-5">
+                <h1 class="mb-0">Shopping Cart</h1>
+                <div class="d-flex gap-4 text-grey fs-5">Order No. 5612169</div>
+            </div>    
+            
+            <!-- <div class="row">
+                <div class="col-9 col-md-12 col-lg-9 p-1">
+                    <div class="rounded border py-4 px-2 ">
+                        <div class="row cart-item fs-xs mb-4">
+                            <div class="col-md-2 col-lg-2 col-xl-1 item-img d-flex align-items-center justify-content-center">
+                                <img src="https://assets.imageconnection.net/pictures/apparel/tiny/CA1B21DE-7160-43A1-A097F7183E94537A-tiny.jpg" id="large-image" class="img-fluid w-100" alt="">
+                            </div>
+                            <div class="col-md-10 col-lg-10 col-xl-11">
+                                <div class="row">
+                                    <div class="col-12"><h6 class="item-name">Men's Tipped Collar Cuff Pique Polo Shirt</h6></div>
+                                    <div class="col-5 col-md-12">
+                                        <div class="row">
+                                                <div class="col-3 d-flex align-items-center">#IC-XY17</div>
+                                                <div class="col-9 d-flex">
+                                                    <div class="form-check p-0 swatch-container">
+                                                        <div class="mr-3 fw-bold">Color: </div>
+                                                        <div class="form-check-input swatch m-0 p-0" type="radio" name="product-color" id="radioProductColor-5" style="background-image: url(https://assets.imageconnection.net/pictures/colors/89365-kdf.jpg);"></div>
+                                                        <label class="form-check-label" for="radioProductColor-5">
+                                                            Black
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 d-flex align-items-center fw-bold">Size:</div>
+                                                <div class="col-9 d-flex fw-bold">Decoration:</div>
+                                                <div class="col-3 d-flex">Large</div>
+                                                <div class="col-9 d-flex">Back Yoke, Embroidery, New Artwork</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 col-md-12 py-3 item-order-details d-flex align-items-center gap-3 justify-content-between">
+                                        <div class="single-price">$25.50</div>
+                                        <div class="item-qty">
+                                            <div class="qty-input-cont" x-data="{ qty: 1 }">
+                                                <span type="button" class="button-minus btn btn-ghost" data-field="quantity" x-on:click="qty--;if(qty < 1){qty = 1;}"><i class="icon-minus"></i></span>
+                                                <input type="number" name="passengers" id="passengers" class="" required min="1" max="12" :value="qty">
+                                                <span type="button" class="button-plus btn btn-ghost" data-field="quantity" x-on:click="qty++;if(qty > 12){qty = 12;}"><i class="icon-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="total-price text-red fw-bold">$76.50</div>
+                                        <div class="item-actions">
+                                            <a href="" type="button" class="btn btn-ghost"><i class="icon-edit"></i></a>
+                                            <a href="" type="button" class="btn btn-ghost"><i class="icon-delete"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-12 col-lg-3 bg-secondary">payment NOOOOOOO</div>
+            </div> -->
+
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-9 mb-3">
+
+                    <!-- Cart Item -->
+                    <div class="rounded border">
+                        <div class="row cart-item fs-xs p-3">
+                            <div class="col-12 col-sm-4 col-md-2 col-lg-2 col-xl-2 item-img d-flex align-items-center justify-content-center">
+                                <img src="https://assets.imageconnection.net/pictures/apparel/tiny/CA1B21DE-7160-43A1-A097F7183E94537A-tiny.jpg" id="large-image" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-12 col-sm-8 col-md-10 col-lg-10 col-xl-10 d-flex align-items-center">
+                                <div class="row">
+                                    <div class="col-12"><h6 class="item-name">Men's Tipped Collar Cuff Pique Polo Shirt</h6></div>
+                                    <div class="col-12 col-md-12 col-lg-5">
+                                        <div class="row">
+                                                <div class="col-3 d-flex align-items-center">#IC-XY17</div>
+                                                <div class="col-9 d-flex">
+                                                    <div class="form-check p-0 swatch-container">
+                                                        <div class="mr-3 fw-bold">Color: </div>
+                                                        <div class="form-check-input swatch m-0 p-0" type="radio" name="product-color" id="radioProductColor-5" style="background-image: url(https://assets.imageconnection.net/pictures/colors/89365-kdf.jpg);"></div>
+                                                        <label class="form-check-label" for="radioProductColor-5">
+                                                            Black
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3 d-flex align-items-center fw-bold">Size:</div>
+                                                <div class="col-9 d-flex fw-bold">Decoration:</div>
+                                                <div class="col-3 d-flex">Large</div>
+                                                <div class="col-9 d-flex">Back Yoke, Embroidery, New Artwork</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-12 col-lg-7 py-3 item-order-details d-flex align-items-center gap-3 justify-content-between">
+                                        <div class="single-price">$25.50</div>
+                                        <div class="item-qty">
+                                            <div class="qty-input-cont" x-data="{ qty: 1 }">
+                                                <span type="button" class="button-minus btn btn-ghost" data-field="quantity" x-on:click="qty--;if(qty < 1){qty = 1;}"><i class="icon-minus"></i></span>
+                                                <input type="number" name="passengers" id="passengers" class="" required min="1" max="12" :value="qty">
+                                                <span type="button" class="button-plus btn btn-ghost" data-field="quantity" x-on:click="qty++;if(qty > 12){qty = 12;}"><i class="icon-plus"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="total-price text-red fw-bold">$76.50</div>
+                                        <div class="item-actions">
+                                            <a href="" type="button" class="btn btn-ghost"><i class="icon-edit"></i></a>
+                                            <a href="" type="button" class="btn btn-ghost"><i class="icon-delete"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End cart item -->
+                </div>
+                <div class="col-12 col-md-12 col-lg-3">
+                    <!-- Order summary collapse -->
+                    <div class="accordion" id="payment">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="orderSummary">
+                            <button class="accordion-button fs-6 fw-bold bg-lighter-grey" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="text-grey">Order Summary</span> 
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="orderSummary" data-bs-parent="#payment">
+                            <div class="accordion-body bg-lighter-grey fs-s">
+                                <div>
+                                    <ul class="p-0">
+                                        <li class="d-flex justify-content-between"><span class="fw-bold w-75 text-grey">Items</span><span>$518.76</span></li>
+                                        <li class="d-flex justify-content-between"><span class="fw-bold w-75 text-grey">Shipping & handling</span><span>$25.00</span></li>
+                                        <li class="d-flex justify-content-between"><span class="fw-bold w-75 text-grey">TAX</span><span>$45.00</span></li>
+                                        <hr>
+                                        <li class="d-flex justify-content-between align-items-center"><span class="fw-bold w-75 text-grey">Order Total</span><span class="text-red fw-bold fs-5">$588.76</span></li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="paymentOptions">
+                            <button class="accordion-button collapsed fs-6 fw-bold bg-lighter-grey" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="text-grey">Payment Options</span> 
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="paymentOptions" data-bs-parent="#payment">
+                            <div class="accordion-body bg-lighter-grey fs-s">
+                                <div class="d-flex flex-wrap gap-3 mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentOption" id="visaCC">
+                                        <label class="form-check-label" for="visaCC">
+                                            <img src="/images/payment-options/cc-visa.svg" alt="Use a Visa Card" width="50">
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentOption" id="masterCC">
+                                        <label class="form-check-label" for="masterCC">
+                                            <img src="/images/payment-options/cc-mastercard.svg" alt="Use a Mastaercard Card" width="50">
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentOption" id="amexCC">
+                                        <label class="form-check-label" for="amexCC">
+                                            <img src="/images/payment-options/cc-amex.svg" alt="Use a AMEX Card" width="50">
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentOption" id="jcbCC">
+                                        <label class="form-check-label" for="jcbCC">
+                                            <img src="/images/payment-options/cc-jcb.svg" alt="Use a JCB Card" width="50">
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentOption" id="discoverCC">
+                                        <label class="form-check-label" for="discoverCC">
+                                            <img src="/images/payment-options/cc-discover.svg" alt="Use a Discover Card" width="50">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="mb-3">
+                                        <label for="cardNumber" class="form-label fs-s">Card Number</label>
+                                        <input type="text" class="form-control" id="cardNumber" placeholder="**** **** **** ****">
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="mb-3">
+                                            <label for="expirationDate" class="form-label fs-s">EXP</label>
+                                            <input type="text" class="form-control" id="expirationDate" placeholder="00 / 00">
+                                        </div>
+                                        <div class="mb-3 mx-2">
+                                            <label for="cvv" class="form-label fs-s">CVV</label>
+                                            <input type="text" class="form-control" id="cvv" placeholder="123">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="postalCode" class="form-label fs-s">ZIP</label>
+                                            <input type="text" class="form-control" id="postalCode" placeholder="000000">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="shippingAddress">
+                            <button class="accordion-button collapsed fs-6 fw-bold bg-lighter-grey" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="text-grey">Shipping Address</span> 
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="shippingAddress" data-bs-parent="#payment">
+                            <div class="accordion-body bg-lighter-grey fs-s">
+                                <div>
+                                    <div class="mb-3">
+                                        <label for="fullName" class="form-label fs-s">Full Name</label>
+                                        <input type="text" class="form-control" id="fullName" placeholder="John Smith">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="fullName" class="form-label fs-s">Address</label>
+                                        <input type="text" class="form-control" id="fullName" placeholder="Line 1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label fs-s">Country</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>United States</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex gap-4">
+                                        <div class="mb-3 flex-grow-1">
+                                            <label for="" class="form-label fs-s">State</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Texas</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 flex-grow-1">
+                                            <label for="" class="form-label fs-s">City</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Houston</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-primary w-100 my-3">PURCHASE</button>
+                      <p class="d-flex align-items-center gap-4 justify-content-center text-grey fw-bold">EASY & SECURE ORDERING <img src="/images/positivessl.png" alt="" width="60"></p>
+                    <!-- END Order summary collapse -->
+                </div>
+            </div>
+          </div>
+          <!-- END Main content -->
+        </div>
+    </div>
+    <!-- End Main Container -->
+  </div>
+</div>
+
+
+<div class="custom-container">
+  <footer class="footer">
+      <div style="height: 700px;">
+      </div>
+  </footer>
+</div>
+
+
+
+<!-- side cart preview -->
+<div class="cart-preview offcanvas offcanvas-end bg-body-secondary" tabindex="-1" id="cartPreView" aria-labelledby="cartPreViewLabel">
+  <div class="offcanvas-header flex-column">
+    <spam class="d-block fs-6">Subtotal</spam>
+    <spam class="d-block fs-5 total text-primary fw-bold">$518.76</spam>
+
+    <a href="" type="button" class="btn-ghost py-1 px-3">Go to Cart</a>
+  </a>
+
+    <!-- <a href="" class="fs-l white-link d-flex p-1 text-decoration-none me-2"><i class="icon-close"></i></a> -->
+  </div>
+  <div class="offcanvas-body">
+    
+    <div class="items-on-cart">
+    </div>
+    
+    <p></p>
+    <a href="" type="button" class="btn-ghost py-1 px-3">Go to Cart</a>
+  </div>
+</div>
+<!-- END side cart preview -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

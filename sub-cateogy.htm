@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Alpine JS  -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+    
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="short">
+    <div class="custom-container">
+
+      <!-- Sidebar Desktop -->
+        <div class="sidebar d-none d-lg-block">
+            <div class="sidebartop">
+                <a class="menu">
+                    <i class="icon-menu"></i>
+                </a>
+            </div>
+        </div>
+      <!-- End Sidebar Desktop -->
+        
+
+  <div class="main">
+    <!-- Mobile Menu -->      
+    <nav class="navbar bg-white sticky-top">
+                  <div class="container-fluid">
+                    <a class="navbar-brand">
+                      <img src="/images/logo-color.png" alt="Image Connection">
+                    </a>
+                    <div class="nav-contacts d-flex gap-3 align-items-center">
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-phone me-1"></i>(866) 250-3676</a>
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-message me-1"></i>Live Chat</a>
+                      <a href="" class="link-underline link-underline-opacity-0 d-none d-lg-block"><i class="icon-contact me-1"></i>Contact Us</a>
+                      <a href="" class="link-underline link-underline-opacity-0  d-none d-lg-block me-4"><i class="icon-user me-1"></i>Account</a>
+
+                      <div class="nav-contacts d-flex gap-3">
+                          <button href="" class="btn-ghost fs-4 me-2"><i class="icon-search"></i></button>
+                          <button class="btn-ghost fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPreView" aria-controls="cartPreView">
+                            <i class="icon-cart"></i>
+                          </button>
+
+                          <button class="btn btn-second d-lg-none fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                              <i class="icon-menu"></i>
+                          </button>
+
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                              <div class="offcanvas-header bg-primary">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                  <img src="/images/logo-white.png" alt="Image Connection">
+                                </h5>
+
+                              <button class="btn btn-ghost btn-colors-inverted d-lg-none fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                  <i class="icon-close"></i>
+                              </button>
+
+                              </div>
+                              <div class="offcanvas-body">
+                                  
+                                
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  </div>
+    </nav>
+    <!-- End Mobile Menu  -->
+
+    <!-- Main Container --> 
+    <div class="p-0 p-lg-5">
+        
+        <div class="container-fluid">
+            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Polo Shirts</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Uniform Polo Shirt</li>
+                </ol>
+            </nav>
+
+          <div class="d-flex justify-content-between">
+            <h1 class="mb-3">Uniform Polo Shirts</h1>
+            <div class="dropdown top-cat-submenu text-red d-none d-md-block">
+              <button class="btn btn-outline dropdown-toggle" type="button" id="top-cat-submenu" data-bs-toggle="dropdown" aria-expanded="false">
+                Other Polo Shirts Options
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="top-cat-submenu">
+                <li><a href="" class="dropdown-item" type="button">Uniform</a></li>
+                <li><a href="" class="dropdown-item" type="button">Performance</a></li>
+                <li><a href="" class="dropdown-item" type="button">Color Block</a></li>
+                <li><a href="" class="dropdown-item" type="button">Long Sleeve</a></li>
+                <li><a href="" class="dropdown-item" type="button">Women's</a></li>
+                <li><a href="" class="dropdown-item" type="button">100% Cotton</a></li>
+                <li><a href="" class="dropdown-item" type="button">Contemporary</a></li>
+                <li><a href="" class="dropdown-item" type="button">Pocket</a></li>
+                <li><a href="" class="dropdown-item" type="button">Big & Tall</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Main content -->
+          <div class="col-12">
+            <div class="row">
+              <!-- Filters  -->
+              <div class="col-12 col-lg-2">
+                <nav class="navbar navbar-transparent navbar-padded navbar-expand-lg navbar-light">
+    
+                  <!-- <button class="navbar-toggler navbar-toggler-right d-md-none" type="button" data-toggle="collapse" data-target="#filters-on-responsive" aria-controls="filters-on-responsive" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button> -->
+                  <a class="btn btn-primary fs-s w-100 py-2 border-0 mb-2 navbar-toggler navbar-toggler-right d-lg-none" data-bs-toggle="collapse" href="#filters-on-responsive" role="button" aria-expanded="false" aria-controls="filters-on-responsive"><i class="icon-filter"></i> Filters</a>
+
+                  <div class="collapse navbar-collapse flex-column align-items-stretch" id="filters-on-responsive">
+                    <div class="filters-head d-flex justify-content-between fs-xs mb-1">
+                      <span>Filter by</span>
+                      <span>Results: 235</span>
+                    </div>
+    
+                    <div class="accordion product-filters-container fs-s" id="product-filters">
+                      <div class="accordion-item border bg-transparent mb-2">
+                        <h2 class="accordion-header" id="accordion-filter-one">
+                          <button class="accordion-button rounded justify-content-between collapsed p-2 icon-math" type="button" data-bs-toggle="collapse" data-bs-target="#filter-materials" aria-expanded="flase" aria-controls="filter-materials">
+                            <span class="text">Materials</span>
+                          </button>
+                        </h2>
+                        <div id="filter-materials" class="accordion-collapse collapse" aria-labelledby="filter-materials" data-bs-parent="#product-filters">
+                          <div class="accordion-body p-0">
+                              <div class="auto-scroll">
+                                <!-- Checkbox -->
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="demo">
+                                  <label class="form-check-label" for="demo"  x-text="materials" >
+                                    Polyester / Cotton Blend
+                                  </label>
+                                </div>
+                                <!-- END Checkbox -->
+
+                                <!-- demo to replicate filters  -->
+                                <div class=""  x-data="{ materials: ['Cotton', 'Polyester', 'Nylon', 'Blend', '100% Cotton', 'Cotton', 'Polyester', 'Nylon', 'Blend', '100% Cotton'] }">
+
+                                  <template x-for="(materials, index) in materials">
+
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="repeated">
+                                        <label class="form-check-label" for="repeated"  x-text="materials" >
+                                          
+                                        </label>
+                                      </div>
+
+                                  </template>
+                                </div>
+                                <!-- END demo to replicate filters  -->
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border bg-transparent mb-2">
+                        <h2 class="accordion-header" id="accordion-filter-two">
+                          <button class="accordion-button rounded justify-content-between collapsed p-2 icon-math" type="button" data-bs-toggle="collapse" data-bs-target="#filter-colors" aria-expanded="flase" aria-controls="filter-colors">
+                            <span class="text">Colors</span>
+                          </button>
+                        </h2>
+                        <div id="filter-colors" class="accordion-collapse collapse" aria-labelledby="filter-colors" data-bs-parent="#product-filters">
+                          <div class="accordion-body p-2">
+                              <div class="form-check swatch-container"> 
+                                <input class="form-check-input swatch" type="checkbox" value="" id="checkProductColor-1" style="background-image: url(https://assets.imageconnection.net/pictures/colors/E91C87D2-E132-46D8-B931A1CF7F249581.jpg);">
+                                <label class="form-check-label" for="checkProductColor-1">
+                                  Campus Purple
+                                </label>
+                              </div>
+                              <div class="form-check swatch-container">
+                                <input class="form-check-input swatch" type="checkbox" value="" id="checkProductColor-2" style="background-image: url(https://assets.imageconnection.net/pictures/colors/DBF745D5-9535-452E-9FAAC72E674E9789.jpg);">
+                                <label class="form-check-label" for="checkProductColor-2">
+                                  Safety Yellow
+                                </label>
+                              </div>
+                              <div class="form-check swatch-container">
+                                <input class="form-check-input swatch" type="checkbox" value="" id="checkProductColor-3" style="background-image: url(https://assets.imageconnection.net/pictures/colors/2E2BDFEA-11DB-47AC-BD9E757626345934.jpg);">
+                                <label class="form-check-label" for="checkProductColor-3">
+                                  True Royal
+                                </label>
+                              </div>
+                              <div class="form-check swatch-container">
+                                <input class="form-check-input swatch" type="checkbox" value="" id="checkProductColor-4" style="background-image: url(https://assets.imageconnection.net/pictures/colors/0BC2186B-8389-40CA-A4C65F31265919BA.jpg);">
+                                <label class="form-check-label" for="checkProductColor-4">
+                                  Campus Gold
+                                </label>
+                              </div>
+                              <div class="form-check swatch-container">
+                                <input class="form-check-input swatch" type="checkbox" value="" id="checkProductColor-4" style="background-image: url(https://assets.imageconnection.net/pictures/colors/89365-kdf.jpg);">
+                                <label class="form-check-label" for="checkProductColor-4">
+                                  Black
+                                </label>
+                              </div>            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border bg-transparent mb-2">
+                        <h2 class="accordion-header" id="accordion-filter-three">
+                          <button class="accordion-button rounded justify-content-between collapsed p-2 icon-math" type="button" data-bs-toggle="collapse" data-bs-target="#filter-brand" aria-expanded="flase" aria-controls="filter-brand">
+                            <span class="text">Brand</span>
+                          </button>
+                        </h2>
+                        <div id="filter-brand" class="accordion-collapse collapse" aria-labelledby="filter-brand" data-bs-parent="#product-filters">
+                          <div class="accordion-body p-0">
+                            <div class="auto-scroll">
+                              <!-- Checkbox -->
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="demo-brand">
+                                <label class="form-check-label" for="demo-brand"  x-text="Brand" >
+                                  Red House
+                                </label>
+                              </div>
+                              <!-- END Checkbox -->
+
+                              <!-- demo to replicate filters  -->
+                              <div class=""  x-data="{ Brand: ['Columbia', 'Nike', 'OGIO', 'Hanes'] }">
+
+                                <template x-for="(Brand, index) in Brand">
+
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="repeated">
+                                      <label class="form-check-label" for="repeated"  x-text="Brand" >
+                                        
+                                      </label>
+                                    </div>
+
+                                </template>
+                              </div>
+                              <!-- END demo to replicate filters  -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border bg-transparent mb-2">
+                        <h2 class="accordion-header" id="accordion-filter-four">
+                          <button class="accordion-button rounded justify-content-between collapsed p-2 icon-math" type="button" data-bs-toggle="collapse" data-bs-target="#filter-price" aria-expanded="flase" aria-controls="filter-price">
+                            <span class="text">Price</span>
+                          </button>
+                        </h2>
+                        <div id="filter-price" class="accordion-collapse collapse" aria-labelledby="filter-price" data-bs-parent="#product-filters">
+                          <div class="accordion-body p-2">
+                              <div x-data="range()" x-init="mintrigger(); maxtrigger()" class="relative max-w-xl w-full">
+                                <div>
+                                  <label for="" class="form-label">Price range:</label>
+                                  <input type="range" 
+                                        step="1"
+                                        x-bind:min="min" x-bind:max="max"
+                                        x-on:input="maxtrigger"
+                                        x-model="maxprice"
+                                        class="w-100 form-range">
+                            
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <input type="text" maxlength="5" x-on:input="mintrigger" x-model="minprice" class="border-0 w-25 text-start">
+                                
+                                    <input type="text" maxlength="5" x-on:input="maxtrigger" x-model="maxprice" class="border-0 w-25 text-end">
+                                </div>
+                              </div>
+                              <hr>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Lower to Highest
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Highest to Lower
+                                </label>
+                              </div>
+                              <hr>
+                                <label for="" class="form-label">Min / Max</label>
+                                <div class="d-flex gap-2">
+                                  <input type="text" class="form-control" id="" placeholder="$ min">
+                                  <input type="email" class="form-control" id="" placeholder="$ max">
+                                </div>
+                                
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border bg-transparent mb-2">
+                        <h2 class="accordion-header" id="accordion-filter-five">
+                          <button class="accordion-button rounded justify-content-between collapsed p-2 icon-math" type="button" data-bs-toggle="collapse" data-bs-target="#filter-size" aria-expanded="flase" aria-controls="filter-size">
+                            <span class="text">Size</span>
+                          </button>
+                        </h2>
+                        <div id="filter-size" class="accordion-collapse collapse" aria-labelledby="filter-size" data-bs-parent="#product-filters">
+                          <div class="accordion-body p-2">
+                            <div class="btn-group checkbox-gap" role="group" aria-label="checkbox toggle button group">
+                              <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                              <label class="btn btn-outline-primary fs-s d-flex align-items-center justify-content-center p-0" for="btncheck1">4XL</label>
+                            
+                              <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                              <label class="btn btn-outline-primary fs-s d-flex align-items-center justify-content-center p-0" for="btncheck2">3XL</label>
+                            
+                              <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                              <label class="btn btn-outline-primary fs-s d-flex align-items-center justify-content-center p-0" for="btncheck3">2XL</label>
+
+                              <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                              <label class="btn btn-outline-primary fs-s d-flex align-items-center justify-content-center p-0" for="btncheck4">XL</label>
+
+                              <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                              <label class="btn btn-outline-primary fs-s d-flex align-items-center justify-content-center p-0" for="btncheck5">L</label>
+
+                              <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                              <label class="btn btn-outline-primary fs-s d-flex align-items-center justify-content-center p-0" for="btncheck6">M</label>
+
+                              <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+                              <label class="btn btn-outline-primary fs-s d-flex align-items-center justify-content-center p-0" for="btncheck7">S</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border bg-transparent mb-2">
+                        <h2 class="accordion-header" id="accordion-filter-six">
+                          <button class="accordion-button rounded justify-content-between collapsed p-2 icon-math" type="button" data-bs-toggle="collapse" data-bs-target="#filter-gender" aria-expanded="flase" aria-controls="filter-gender">
+                            <span class="text">Gender</span>
+                          </button>
+                        </h2>
+                        <div id="filter-gender" class="accordion-collapse collapse" aria-labelledby="filter-gender" data-bs-parent="#product-filters">
+                          <div class="accordion-body p-2">
+                            
+                              <!-- Radio -->
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="genderMale">
+                                <label class="form-check-label" for="genderMale">
+                                  Male
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="genderFemale">
+                                <label class="form-check-label" for="genderFemale">
+                                  Female
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="genderBoth">
+                                <label class="form-check-label" for="genderBoth">
+                                  Both
+                                </label>
+                              </div>
+                              <!-- END Radio -->
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border bg-transparent mb-2">
+                        <h2 class="accordion-header" id="accordion-filter-seven">
+                          <button class="accordion-button rounded justify-content-between collapsed p-2 icon-math" type="button" data-bs-toggle="collapse" data-bs-target="#filter-pattern" aria-expanded="flase" aria-controls="filter-pattern">
+                            <span class="text">Pattern</span>
+                          </button>
+                        </h2>
+                        <div id="filter-pattern" class="accordion-collapse collapse" aria-labelledby="filter-pattern" data-bs-parent="#product-filters">
+                          <div class="accordion-body p-2">
+                            <div class="auto-scroll">
+                              <!-- Checkbox -->
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="demo-Pattern">
+                                <label class="form-check-label" for="demo-Pattern"  x-text="Pattern" >
+                                  Solid
+                                </label>
+                              </div>
+                              <!-- END Checkbox -->
+
+                              <!-- demo to replicate filters  -->
+                              <div class=""  x-data="{ Pattern: ['Striped', 'Tie-dye', 'Camouflage', 'Geometric', 'Striped', 'Tie-dye', 'Camouflage', 'Geometric', 'Striped', 'Tie-dye', 'Camouflage', 'Geometric'] }">
+
+                                <template x-for="(Pattern, index) in Pattern">
+
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="repeated">
+                                      <label class="form-check-label" for="repeated"  x-text="Pattern" >
+                                        
+                                      </label>
+                                    </div>
+
+                                </template>
+                              </div>
+                              <!-- END demo to replicate filters  -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="d-flex justify-content-between my-3">
+                        <a href="#" class="btn btn-ghost p-2 fs-s">Clear Filters</a>
+                        <a href="#" class="btn btn-ghost p-2 fs-s">Apply Filters</a>                  
+                    </div>
+                    
+                    <div class="applied-filters p-2 rounded">
+    
+                      <p class="fs-xs mb-1">Applied Filters:</p>
+                      <div class="applied-filters-badges-container bg-white rounded p-2">
+                        <span class="badge rounded fs-xs auto-close d-flex align-items-center justify-content-between">Polyester / Cotton Blend <i class="icon-close"></i></span>
+                        <span class="badge rounded fs-xs auto-close">Nylon <i class="icon-close"></i></span>
+                        <span class="badge rounded fs-xs auto-close">Black & White <i class="icon-close"></i></span>
+                        <span class="badge rounded fs-xs auto-close">Nylon <i class="icon-close"></i></span>
+                        <span class="badge rounded fs-xs auto-close">Nylon <i class="icon-close"></i></span>
+                        <span class="badge rounded fs-xs auto-close">Nylon <i class="icon-close"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+
+                
+              </div>
+              <!-- END Filters  -->
+
+              <!-- Products tiles -->
+              <div class="col-12 col-lg-10">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 mb-4">
+                  <!-- Category card -->
+                  
+                      <div class="col card-product-container">
+                        <a href="" class="card h-100 text-decoration-none">
+                            <div class="card-image-container position-relative">
+                              <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                                  <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit</div>
+                              </div>
+                              <div class="p-2 text-center">
+                                <img src="https://assets.imageconnection.net/pictures/apparel/tiny/core-value-performance-polo-shirt-tiny-62915.jpg" class="card-img-top" alt="Core Value Performance Polo Shirt">
+                              </div>
+                            </div>
+                            <div class="card-body fs-s">                      
+                              <h6 class="text-red card-title">Core Value Performance Polo Shirt</h6>
+                              <p class="text-grey mb-0 d-flex justify-content-between"><span>Core 365</span> <span>Item #IC-TG17</span></p>
+                              <p class="card-text text-body">As low as <span class="price text-red fw-bold">$15.00</span></p>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col card-product-container">
+                        <a href="" class="card h-100 text-decoration-none">
+                            <div class="card-image-container position-relative">
+                              <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                                  <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit</div>
+                              </div>
+                              <div class="p-2 text-center">
+                                <img src="https://assets.imageconnection.net/pictures/apparel/tiny/micropique-performance-polo-shirt-tiny-194690.jpg" alt="Micropique Best Selling Performance Polo Shirt">
+                              </div>
+                            </div>
+                            <div class="card-body fs-s">                      
+                              <h6 class="text-red card-title">Core Value Performance Polo Shirt</h6>
+                              <p class="text-grey mb-0 d-flex justify-content-between"><span>Core 365</span> <span>Item #IC-TG17</span></p>
+                              <p class="card-text text-body">As low as <span class="price text-red fw-bold">$15.00</span></p>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col card-product-container">
+                        <a href="" class="card h-100 text-decoration-none">
+                            <div class="card-image-container position-relative">
+                              <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                                  <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit</div>
+                              </div>
+                              <div class="p-2 text-center">
+                                <img src="https://assets.imageconnection.net/pictures/apparel/tiny/womens-micropique-moisture-wicking-polo-shirt-tiny-194689.jpg" alt="Women's Micropique Moisture Wicking Polo Shirt">
+                              </div>
+                            </div>
+                            <div class="card-body fs-s">                      
+                              <h6 class="text-red card-title">Core Value Performance Polo Shirt</h6>
+                              <p class="text-grey mb-0 d-flex justify-content-between"><span>Core 365</span> <span>Item #IC-TG17</span></p>
+                              <p class="card-text text-body">As low as <span class="price text-red fw-bold">$15.00</span></p>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col card-product-container">
+                        <a href="" class="card h-100 text-decoration-none">
+                            <div class="card-image-container position-relative">
+                              <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                                  <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit</div>
+                              </div>
+                              <div class="p-2 text-center">
+                                <img src="https://assets.imageconnection.net/pictures/apparel/tiny/womens-core-value-performance-polo-shirt-tiny-62916.jpg" alt="Women's Core Value Performance Polo Shirt">
+                              </div>
+                            </div>
+                            <div class="card-body fs-s">                      
+                              <h6 class="text-red card-title">Core Value Performance Polo Shirt</h6>
+                              <p class="text-grey mb-0 d-flex justify-content-between"><span>Core 365</span> <span>Item #IC-TG17</span></p>
+                              <p class="card-text text-body">As low as <span class="price text-red fw-bold">$15.00</span></p>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col card-product-container">
+                        <a href="" class="card h-100 text-decoration-none">
+                            <div class="card-image-container position-relative">
+                              <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                                  <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit</div>
+                              </div>
+                              <div class="p-2 text-center">
+                                <img src="https://assets.imageconnection.net/pictures/apparel/tiny/womens-silk-touch-polo-shirt-tiny-43705.jpg" alt="Women's Silk Touch Polo Shirt">
+                              </div>
+                            </div>
+                            <div class="card-body fs-s">                      
+                              <h6 class="text-red card-title">Core Value Performance Polo Shirt</h6>
+                              <p class="text-grey mb-0 d-flex justify-content-between"><span>Core 365</span> <span>Item #IC-TG17</span></p>
+                              <p class="card-text text-body">As low as <span class="price text-red fw-bold">$15.00</span></p>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col card-product-container">
+                        <a href="" class="card h-100 text-decoration-none">
+                            <div class="card-image-container position-relative">
+                              <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                                  <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit</div>
+                              </div>
+                              <div class="p-2 text-center">
+                                <img src="https://assets.imageconnection.net/pictures/apparel/tiny/E025C32A-B8CE-475E-A9ABC17919307CCA-tiny.jpg" alt="Silk Touch Polo Shirt A Best Selling Uniform Polo">
+                              </div>
+                            </div>
+                            <div class="card-body fs-s">                      
+                              <h6 class="text-red card-title">Core Value Performance Polo Shirt</h6>
+                              <p class="text-grey mb-0 d-flex justify-content-between"><span>Core 365</span> <span>Item #IC-TG17</span></p>
+                              <p class="card-text text-body">As low as <span class="price text-red fw-bold">$15.00</span></p>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col card-product-container">
+                        <a href="" class="card h-100 text-decoration-none">
+                            <div class="card-image-container position-relative">
+                              <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                                  <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit</div>
+                              </div>
+                              <div class="p-2 text-center">
+                                <img src="https://assets.imageconnection.net/pictures/apparel/tiny/select-snag-proof-pocket-polo-tiny-417679.jpg" alt="Select Snag-proof Pocket Polo">
+                              </div>
+                            </div>
+                            <div class="card-body fs-s">                      
+                              <h6 class="text-red card-title">Core Value Performance Polo Shirt</h6>
+                              <p class="text-grey mb-0 d-flex justify-content-between"><span>Core 365</span> <span>Item #IC-TG17</span></p>
+                              <p class="card-text text-body">As low as <span class="price text-red fw-bold">$15.00</span></p>
+                            </div>
+                        </a>
+                      </div>
+                      <div class="col card-product-container">
+                        <a href="" class="card h-100 text-decoration-none">
+                            <div class="card-image-container position-relative">
+                              <div class="hover-card position-absolute rounded w-100 h-100 d-flex align-items-center justify-content-around">
+                                  <div class="btn btn-outline-light w-75 py-3 rounded text-center fw-bold">Edit</div>
+                              </div>
+                              <div class="p-2 text-center">
+                                <img src="https://assets.imageconnection.net/pictures/apparel/tiny/economy-uniform-polo-5-2-oz-jersey-knit-tiny-43719.jpg" alt="Economy Uniform Polo 5.2 Oz Jersey Knit">
+                              </div>
+                            </div>
+                            <div class="card-body fs-s">                      
+                              <h6 class="text-red card-title">Core Value Performance Polo Shirt</h6>
+                              <p class="text-grey mb-0 d-flex justify-content-between"><span>Core 365</span> <span>Item #IC-TG17</span></p>
+                              <p class="card-text text-body">As low as <span class="price text-red fw-bold">$15.00</span></p>
+                            </div>
+                        </a>
+                      </div>
+                  <!-- END Category card -->
+                </div>
+              </div>
+              <!-- END Products tiles -->
+            </div>
+
+          </div>
+          <!-- END Main content -->
+          <!-- Pagination -->
+          <div class="d-flex justify-content-center">
+            <nav aria-label="Page navigation">
+              <ul class="pagination d-flex gap-3 fw-bold">
+                <li class="page-item">
+                  <a class="page-link border-2" href="#" aria-label="Previous">
+                    <i class="icon-chevron-left"></i>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link border-2" href="#">1</a></li>
+                <li class="page-item"><a class="page-link border-2" href="#">2</a></li>
+                <li class="page-item"><a class="page-link border-2" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link border-2" href="#" aria-label="Next">
+                    <i class="icon-chevron-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- END Pagination -->
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 pt-5 mt-5">
+            <div class="col text-grey fs-6">
+                <p>
+                  Embroidered work polos are the perfect uniform shirt. Our uniform polos are stain resistant, fade resistant, shrink resistant, comfortable to wear, and they look great decorated with your company logo.
+                </p>
+                <p>
+                  We offer an excellent selection of blended polo shirts and 100% polyester shirts that are excellent choices for uniform programs. Most of the shirts featured here are available in a wide range of colors and are generally “in stock” for immediate delivery.
+                </p>            
+            </div>
+            <div class="col text-grey fs-6">
+                <p>
+                  Uniform Work Polos are a special breed of polo shirt. Engineered for performance in tough conditions. Fighting Snags, stains and fading like a superhero’s uniform.
+                </p>            
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- End Main Container -->
+  </div>
+</div>
+
+
+<div class="custom-container">
+  <footer class="footer">
+      <div style="height: 700px;">
+      </div>
+  </footer>
+</div>
+
+
+
+<!-- side cart preview -->
+<div class="cart-preview offcanvas offcanvas-end bg-body-secondary" tabindex="-1" id="cartPreView" aria-labelledby="cartPreViewLabel">
+  <div class="offcanvas-header flex-column">
+    <spam class="d-block fs-6">Subtotal</spam>
+    <spam class="d-block fs-5 total text-primary fw-bold">$518.76</spam>
+
+    <a href="" type="button" class="btn-ghost py-1 px-3">Go to Cart</a>
+  </a>
+
+    <!-- <a href="" class="fs-l white-link d-flex p-1 text-decoration-none me-2"><i class="icon-close"></i></a> -->
+  </div>
+  <div class="offcanvas-body">
+    
+    <div class="items-on-cart">
+    </div>
+    
+    <p></p>
+    <a href="" type="button" class="btn-ghost py-1 px-3">Go to Cart</a>
+  </div>
+</div>
+<!-- END side cart preview -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
