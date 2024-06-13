@@ -22,8 +22,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-hide:before {
+  content: "\e904";
+}
+
+.icon-trousers:before {
+  content: "\e905";
+}
+
 .icon-work-uniform:before {
-  content: "\e92a";
+  content: "\e92b";
 }
 
 .icon-bags:before {
@@ -43,19 +51,19 @@
 }
 
 .icon-chevron-down:before {
-  content: "\e904";
+  content: "\e92a";
 }
 
 .icon-chevron-left:before {
-  content: "\e905";
+  content: "\e919";
 }
 
 .icon-chevron-right:before {
-  content: "\e906";
+  content: "\e918";
 }
 
 .icon-chevron-up:before {
-  content: "\e907";
+  content: "\e92e";
 }
 
 .icon-close:before {
@@ -123,47 +131,47 @@
 }
 
 .icon-minus:before {
-  content: "\e918";
-}
-
-.icon-outerwear:before {
-  content: "\e919";
-}
-
-.icon-patches:before {
-  content: "\e91a";
-}
-
-.icon-phone:before {
-  content: "\e91b";
-}
-
-.icon-plus:before {
   content: "\e91c";
 }
 
-.icon-poloshirt:before {
+.icon-outerwear:before {
+  content: "\e91a";
+}
+
+.icon-patches:before {
+  content: "\e91b";
+}
+
+.icon-phone:before {
   content: "\e91d";
 }
 
-.icon-question:before {
+.icon-plus:before {
   content: "\e91e";
 }
 
-.icon-reflective-transfer:before {
+.icon-poloshirt:before {
   content: "\e91f";
 }
 
-.icon-restaurant:before {
+.icon-question:before {
   content: "\e920";
 }
 
-.icon-screen-printing:before {
+.icon-reflective-transfer:before {
   content: "\e921";
 }
 
-.icon-scrubs:before {
+.icon-restaurant:before {
   content: "\e922";
+}
+
+.icon-screen-printing:before {
+  content: "\e92c";
+}
+
+.icon-scrubs:before {
+  content: "\e92d";
 }
 
 .icon-search:before {
