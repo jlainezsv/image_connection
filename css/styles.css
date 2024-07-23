@@ -22,6 +22,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-error:before {
+  content: "\e907";
+}
+
+.icon-exclamation:before {
+  content: "\e92f";
+}
+
+.icon-info:before {
+  content: "\e930";
+}
+
+.icon-tag:before {
+  content: "\e931";
+}
+
 .icon-read-more:before {
   content: "\e906";
 }
