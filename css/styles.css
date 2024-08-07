@@ -22,6 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-expand:before {
+  content: "\e932";
+}
+
 .icon-error:before {
   content: "\e907";
 }
