@@ -22,6 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-image:before {
+  content: "\e933";
+}
+
 .icon-expand:before {
   content: "\e932";
 }
