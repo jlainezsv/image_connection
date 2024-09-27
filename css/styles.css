@@ -22,6 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-up-arrow:before {
+  content: "\e935";
+}
+
 .icon-zoom-in:before {
   content: "\e934";
 }
