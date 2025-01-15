@@ -22,6 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-water-bottle:before {
+  content: "\e936";
+}
+
 .icon-up-arrow:before {
   content: "\e935";
 }
@@ -496,7 +500,7 @@ footer .white-link:hover {
   transform: translate(-50%, -50%);
 }
 .custom-container .sidebar .search input {
-  background-color: #d8454b;
+  background-color: rgb(216.386, 69.114, 74.502);
   border: 0px;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -670,7 +674,7 @@ footer .white-link:hover {
   display: none;
 }
 .searchWindow input {
-  background-color: #bfbfbf;
+  background-color: rgb(191.25, 191.25, 191.25);
   border: 0px;
   padding: 1rem 0.5rem;
   border-radius: 0.5rem;

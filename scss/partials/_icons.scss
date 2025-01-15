@@ -25,7 +25,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
+.icon-water-bottle:before {
+  content: "\e936";
+}
 .icon-up-arrow:before {
   content: "\e935";
 }
