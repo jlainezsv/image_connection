@@ -22,6 +22,58 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-adidas:before {
+  content: "\e937";
+}
+
+.icon-antigua:before {
+  content: "\e938";
+}
+
+.icon-ogio:before {
+  content: "\e939";
+}
+
+.icon-brooks:before {
+  content: "\e93a";
+}
+
+.icon-callaway:before {
+  content: "\e93b";
+}
+
+.icon-columbia:before {
+  content: "\e93c";
+}
+
+.icon-cutter-and-buck:before {
+  content: "\e93d";
+}
+
+.icon-greg-norman:before {
+  content: "\e93e";
+}
+
+.icon-nike:before {
+  content: "\e93f";
+}
+
+.icon-north-face:before {
+  content: "\e940";
+}
+
+.icon-reebok:before {
+  content: "\e941";
+}
+
+.icon-travismathew:before {
+  content: "\e942";
+}
+
+.icon-under-armour:before {
+  content: "\e943";
+}
+
 .icon-water-bottle:before {
   content: "\e936";
 }
