@@ -26,6 +26,15 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .icon-bolt:before {
+    content: "\e944";
+  }
+  .icon-eddie-bauer:before {
+    content: "\e945";
+  }
+  .icon-puma:before {
+    content: "\e946";
+  }
   .icon-adidas:before {
     content: "\e937";
   }
