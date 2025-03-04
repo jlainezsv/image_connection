@@ -26,6 +26,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .icon-richardson:before {
+    content: "\e947";
+  }
   .icon-bolt:before {
     content: "\e944";
   }
