@@ -25,7 +25,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
+  .icon-polo-shirt-dollar:before {
+    content: "\e948";
+  }
   .icon-richardson:before {
     content: "\e947";
   }
