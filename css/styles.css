@@ -22,6 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-free-shipping:before {
+  content: "\e949";
+}
+
 .icon-polo-shirt-dollar:before {
   content: "\e948";
 }
