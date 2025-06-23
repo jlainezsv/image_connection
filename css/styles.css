@@ -22,6 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-allowance:before {
+  content: "\e94a";
+}
+
 .icon-free-shipping:before {
   content: "\e949";
 }
