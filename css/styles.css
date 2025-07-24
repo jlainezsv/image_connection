@@ -22,6 +22,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-palm:before {
+  content: "\e94b";
+}
+
 .icon-allowance:before {
   content: "\e94a";
 }
