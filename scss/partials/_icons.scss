@@ -26,6 +26,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+.icon-huk:before {
+  content: "\e952";
+}
 .icon-beach:before {
   content: "\e900";
 }
@@ -271,7 +274,4 @@
 }
 .icon-palm:before {
   content: "\e951";
-}
-.icon-umbrella:before {
-  content: "\e952";
 }
