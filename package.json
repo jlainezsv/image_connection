@@ -1,0 +1,23 @@
+{
+  "name": "bl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
+    "generate:icons:css": "node generate-icon-classes.js",
+    "build": "rm -rf dist && mkdir -p dist && node generate-unicodes.js && node generate-icon-classes.js && fantasticon --config fantasticon.config.js && cp icons.css dist/icons.css && mv dist/ic-icons.html dist/index.html"
+
+
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "fantasticon": "^3.0.0",
+    "gh-pages": "^6.3.0"
+  }
+}

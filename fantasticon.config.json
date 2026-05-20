@@ -1,0 +1,16 @@
+{
+  "inputDir": "./src/icons",
+  "outputDir": "./dist",
+  "fontTypes": ["woff2", "woff", "ttf", "svg"],
+  "assetTypes": ["html"],
+  "name": "ic-icons",
+  "prefix": "icon",
+    "normalize": true,
+  "selector": null,
+  "tag": "i",
+  "fontsUrl": "",
+  "codepoints": "./icon-unicode-map.json",
+  "templates": {
+    "html": "./templates/preview.hbs"
+  }
+}

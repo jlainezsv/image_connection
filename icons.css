@@ -1,0 +1,361 @@
+/* Stable icon API. Update this file only when icon names change. */
+@font-face {
+  font-family: "ic-icons";
+  src:
+    url("./ic-icons.woff2") format("woff2"),
+    url("./ic-icons.woff") format("woff"),
+    url("./ic-icons.ttf") format("truetype"),
+    url("./ic-icons.svg#ic-icons") format("svg");
+  font-display: block;
+}
+
+.icon::before,
+.icon-adidas::before,
+.icon-allowance::before,
+.icon-antigua::before,
+.icon-bags::before,
+.icon-bolt::before,
+.icon-brooks::before,
+.icon-callaway::before,
+.icon-cap::before,
+.icon-cart::before,
+.icon-check::before,
+.icon-chevron-down::before,
+.icon-chevron-left::before,
+.icon-chevron-right::before,
+.icon-chevron-up::before,
+.icon-close::before,
+.icon-columbia::before,
+.icon-contact::before,
+.icon-cutter-and-buck::before,
+.icon-delete::before,
+.icon-direct-print::before,
+.icon-dress-shirt::before,
+.icon-easter-egg::before,
+.icon-eddie-bauer::before,
+.icon-edit::before,
+.icon-embroidery::before,
+.icon-ems::before,
+.icon-enter::before,
+.icon-error::before,
+.icon-exclamation::before,
+.icon-expand::before,
+.icon-eye::before,
+.icon-facebook::before,
+.icon-filter::before,
+.icon-free-shipping::before,
+.icon-glasses::before,
+.icon-greg-norman::before,
+.icon-heat-transfer::before,
+.icon-hide::before,
+.icon-hospitality::before,
+.icon-huk::before,
+.icon-image::before,
+.icon-info::before,
+.icon-menu::before,
+.icon-message::before,
+.icon-minus::before,
+.icon-nike::before,
+.icon-north-face::before,
+.icon-ogio::before,
+.icon-outerwear::before,
+.icon-palm::before,
+.icon-patches::before,
+.icon-phone::before,
+.icon-plus::before,
+.icon-polo-shirt-dollar::before,
+.icon-poloshirt::before,
+.icon-puma::before,
+.icon-question::before,
+.icon-read-more::before,
+.icon-reebok::before,
+.icon-reflective-transfer::before,
+.icon-restaurant::before,
+.icon-richardson::before,
+.icon-screen-printing::before,
+.icon-scrubs::before,
+.icon-search::before,
+.icon-sportswear::before,
+.icon-sun::before,
+.icon-tag::before,
+.icon-travismathew::before,
+.icon-trousers::before,
+.icon-tshirt::before,
+.icon-tulip::before,
+.icon-twitter::before,
+.icon-umbrella::before,
+.icon-under-armour::before,
+.icon-up-arrow::before,
+.icon-upload::before,
+.icon-usa-flag::before,
+.icon-user::before,
+.icon-user-plus::before,
+.icon-water-bottle::before,
+.icon-work-uniform::before,
+.icon-zoom-in::before {
+  font-family: "ic-icons";
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reusable icon classes mapped to token variables. */
+.icon-adidas::before {
+  content: var(--icon-adidas);
+}
+.icon-allowance::before {
+  content: var(--icon-allowance);
+}
+.icon-antigua::before {
+  content: var(--icon-antigua);
+}
+.icon-bags::before {
+  content: var(--icon-bags);
+}
+.icon-bolt::before {
+  content: var(--icon-bolt);
+}
+.icon-brooks::before {
+  content: var(--icon-brooks);
+}
+.icon-callaway::before {
+  content: var(--icon-callaway);
+}
+.icon-cap::before {
+  content: var(--icon-cap);
+}
+.icon-cart::before {
+  content: var(--icon-cart);
+}
+.icon-check::before {
+  content: var(--icon-check);
+}
+.icon-chevron-down::before {
+  content: var(--icon-chevron-down);
+}
+.icon-chevron-left::before {
+  content: var(--icon-chevron-left);
+}
+.icon-chevron-right::before {
+  content: var(--icon-chevron-right);
+}
+.icon-chevron-up::before {
+  content: var(--icon-chevron-up);
+}
+.icon-close::before {
+  content: var(--icon-close);
+}
+.icon-columbia::before {
+  content: var(--icon-columbia);
+}
+.icon-contact::before {
+  content: var(--icon-contact);
+}
+.icon-cutter-and-buck::before {
+  content: var(--icon-cutter-and-buck);
+}
+.icon-delete::before {
+  content: var(--icon-delete);
+}
+.icon-direct-print::before {
+  content: var(--icon-direct-print);
+}
+.icon-dress-shirt::before {
+  content: var(--icon-dress-shirt);
+}
+.icon-easter-egg::before {
+  content: var(--icon-easter-egg);
+}
+.icon-eddie-bauer::before {
+  content: var(--icon-eddie-bauer);
+}
+.icon-edit::before {
+  content: var(--icon-edit);
+}
+.icon-embroidery::before {
+  content: var(--icon-embroidery);
+}
+.icon-ems::before {
+  content: var(--icon-ems);
+}
+.icon-enter::before {
+  content: var(--icon-enter);
+}
+.icon-error::before {
+  content: var(--icon-error);
+}
+.icon-exclamation::before {
+  content: var(--icon-exclamation);
+}
+.icon-expand::before {
+  content: var(--icon-expand);
+}
+.icon-eye::before {
+  content: var(--icon-eye);
+}
+.icon-facebook::before {
+  content: var(--icon-facebook);
+}
+.icon-filter::before {
+  content: var(--icon-filter);
+}
+.icon-free-shipping::before {
+  content: var(--icon-free-shipping);
+}
+.icon-glasses::before {
+  content: var(--icon-glasses);
+}
+.icon-greg-norman::before {
+  content: var(--icon-greg-norman);
+}
+.icon-heat-transfer::before {
+  content: var(--icon-heat-transfer);
+}
+.icon-hide::before {
+  content: var(--icon-hide);
+}
+.icon-hospitality::before {
+  content: var(--icon-hospitality);
+}
+.icon-huk::before {
+  content: var(--icon-huk);
+}
+.icon-image::before {
+  content: var(--icon-image);
+}
+.icon-info::before {
+  content: var(--icon-info);
+}
+.icon-menu::before {
+  content: var(--icon-menu);
+}
+.icon-message::before {
+  content: var(--icon-message);
+}
+.icon-minus::before {
+  content: var(--icon-minus);
+}
+.icon-nike::before {
+  content: var(--icon-nike);
+}
+.icon-north-face::before {
+  content: var(--icon-north-face);
+}
+.icon-ogio::before {
+  content: var(--icon-ogio);
+}
+.icon-outerwear::before {
+  content: var(--icon-outerwear);
+}
+.icon-palm::before {
+  content: var(--icon-palm);
+}
+.icon-patches::before {
+  content: var(--icon-patches);
+}
+.icon-phone::before {
+  content: var(--icon-phone);
+}
+.icon-plus::before {
+  content: var(--icon-plus);
+}
+.icon-polo-shirt-dollar::before {
+  content: var(--icon-polo-shirt-dollar);
+}
+.icon-poloshirt::before {
+  content: var(--icon-poloshirt);
+}
+.icon-puma::before {
+  content: var(--icon-puma);
+}
+.icon-question::before {
+  content: var(--icon-question);
+}
+.icon-read-more::before {
+  content: var(--icon-read-more);
+}
+.icon-reebok::before {
+  content: var(--icon-reebok);
+}
+.icon-reflective-transfer::before {
+  content: var(--icon-reflective-transfer);
+}
+.icon-restaurant::before {
+  content: var(--icon-restaurant);
+}
+.icon-richardson::before {
+  content: var(--icon-richardson);
+}
+.icon-screen-printing::before {
+  content: var(--icon-screen-printing);
+}
+.icon-scrubs::before {
+  content: var(--icon-scrubs);
+}
+.icon-search::before {
+  content: var(--icon-search);
+}
+.icon-sportswear::before {
+  content: var(--icon-sportswear);
+}
+.icon-sun::before {
+  content: var(--icon-sun);
+}
+.icon-tag::before {
+  content: var(--icon-tag);
+}
+.icon-travismathew::before {
+  content: var(--icon-travismathew);
+}
+.icon-trousers::before {
+  content: var(--icon-trousers);
+}
+.icon-tshirt::before {
+  content: var(--icon-tshirt);
+}
+.icon-tulip::before {
+  content: var(--icon-tulip);
+}
+.icon-twitter::before {
+  content: var(--icon-twitter);
+}
+.icon-umbrella::before {
+  content: var(--icon-umbrella);
+}
+.icon-under-armour::before {
+  content: var(--icon-under-armour);
+}
+.icon-up-arrow::before {
+  content: var(--icon-up-arrow);
+}
+.icon-upload::before {
+  content: var(--icon-upload);
+}
+.icon-usa-flag::before {
+  content: var(--icon-usa-flag);
+}
+.icon-user::before {
+  content: var(--icon-user);
+}
+.icon-user-plus::before {
+  content: var(--icon-user-plus);
+}
+.icon-water-bottle::before {
+  content: var(--icon-water-bottle);
+}
+.icon-work-uniform::before {
+  content: var(--icon-work-uniform);
+}
+.icon-zoom-in::before {
+  content: var(--icon-zoom-in);
+}
+
+/* Example pseudo-element usage */
+.dropdown-toggle::after {
+  font-family: "ic-icons";
+  content: var(--icon-chevron-down);
+}
