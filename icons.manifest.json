@@ -1,0 +1,417 @@
+[
+  {
+    "name": "adidas",
+    "class": "icon-adidas",
+    "unicode": "f17e"
+  },
+  {
+    "name": "allowance",
+    "class": "icon-allowance",
+    "unicode": "f17f"
+  },
+  {
+    "name": "antigua",
+    "class": "icon-antigua",
+    "unicode": "f180"
+  },
+  {
+    "name": "bags",
+    "class": "icon-bags",
+    "unicode": "f181"
+  },
+  {
+    "name": "bolt",
+    "class": "icon-bolt",
+    "unicode": "f182"
+  },
+  {
+    "name": "brooks",
+    "class": "icon-brooks",
+    "unicode": "f183"
+  },
+  {
+    "name": "callaway",
+    "class": "icon-callaway",
+    "unicode": "f184"
+  },
+  {
+    "name": "cap",
+    "class": "icon-cap",
+    "unicode": "f185"
+  },
+  {
+    "name": "cart",
+    "class": "icon-cart",
+    "unicode": "f186"
+  },
+  {
+    "name": "check",
+    "class": "icon-check",
+    "unicode": "f130"
+  },
+  {
+    "name": "chevron-down",
+    "class": "icon-chevron-down",
+    "unicode": "f131"
+  },
+  {
+    "name": "chevron-left",
+    "class": "icon-chevron-left",
+    "unicode": "f132"
+  },
+  {
+    "name": "chevron-right",
+    "class": "icon-chevron-right",
+    "unicode": "f133"
+  },
+  {
+    "name": "chevron-up",
+    "class": "icon-chevron-up",
+    "unicode": "f134"
+  },
+  {
+    "name": "close",
+    "class": "icon-close",
+    "unicode": "f136"
+  },
+  {
+    "name": "columbia",
+    "class": "icon-columbia",
+    "unicode": "f187"
+  },
+  {
+    "name": "contact",
+    "class": "icon-contact",
+    "unicode": "f188"
+  },
+  {
+    "name": "cutter-and-buck",
+    "class": "icon-cutter-and-buck",
+    "unicode": "f189"
+  },
+  {
+    "name": "delete",
+    "class": "icon-delete",
+    "unicode": "f18a"
+  },
+  {
+    "name": "direct-print",
+    "class": "icon-direct-print",
+    "unicode": "f18b"
+  },
+  {
+    "name": "dress-shirt",
+    "class": "icon-dress-shirt",
+    "unicode": "f18c"
+  },
+  {
+    "name": "easter-egg",
+    "class": "icon-easter-egg",
+    "unicode": "f18d"
+  },
+  {
+    "name": "eddie-bauer",
+    "class": "icon-eddie-bauer",
+    "unicode": "f18e"
+  },
+  {
+    "name": "edit",
+    "class": "icon-edit",
+    "unicode": "f18f"
+  },
+  {
+    "name": "embroidery",
+    "class": "icon-embroidery",
+    "unicode": "f190"
+  },
+  {
+    "name": "ems",
+    "class": "icon-ems",
+    "unicode": "f191"
+  },
+  {
+    "name": "enter",
+    "class": "icon-enter",
+    "unicode": "f192"
+  },
+  {
+    "name": "error",
+    "class": "icon-error",
+    "unicode": "f193"
+  },
+  {
+    "name": "exclamation",
+    "class": "icon-exclamation",
+    "unicode": "f194"
+  },
+  {
+    "name": "expand",
+    "class": "icon-expand",
+    "unicode": "f195"
+  },
+  {
+    "name": "eye",
+    "class": "icon-eye",
+    "unicode": "f196"
+  },
+  {
+    "name": "facebook",
+    "class": "icon-facebook",
+    "unicode": "f145"
+  },
+  {
+    "name": "filter",
+    "class": "icon-filter",
+    "unicode": "f197"
+  },
+  {
+    "name": "free-shipping",
+    "class": "icon-free-shipping",
+    "unicode": "f198"
+  },
+  {
+    "name": "glasses",
+    "class": "icon-glasses",
+    "unicode": "f199"
+  },
+  {
+    "name": "greg-norman",
+    "class": "icon-greg-norman",
+    "unicode": "f19a"
+  },
+  {
+    "name": "heat-transfer",
+    "class": "icon-heat-transfer",
+    "unicode": "f19b"
+  },
+  {
+    "name": "hide",
+    "class": "icon-hide",
+    "unicode": "f19c"
+  },
+  {
+    "name": "hospitality",
+    "class": "icon-hospitality",
+    "unicode": "f19d"
+  },
+  {
+    "name": "huk",
+    "class": "icon-huk",
+    "unicode": "f19e"
+  },
+  {
+    "name": "image",
+    "class": "icon-image",
+    "unicode": "f19f"
+  },
+  {
+    "name": "info",
+    "class": "icon-info",
+    "unicode": "f1a0"
+  },
+  {
+    "name": "menu",
+    "class": "icon-menu",
+    "unicode": "f1a1"
+  },
+  {
+    "name": "message",
+    "class": "icon-message",
+    "unicode": "f1a2"
+  },
+  {
+    "name": "minus",
+    "class": "icon-minus",
+    "unicode": "f150"
+  },
+  {
+    "name": "nike",
+    "class": "icon-nike",
+    "unicode": "f1a3"
+  },
+  {
+    "name": "north-face",
+    "class": "icon-north-face",
+    "unicode": "f1a4"
+  },
+  {
+    "name": "ogio",
+    "class": "icon-ogio",
+    "unicode": "f1a5"
+  },
+  {
+    "name": "outerwear",
+    "class": "icon-outerwear",
+    "unicode": "f1a6"
+  },
+  {
+    "name": "palm",
+    "class": "icon-palm",
+    "unicode": "f1a7"
+  },
+  {
+    "name": "patches",
+    "class": "icon-patches",
+    "unicode": "f1a8"
+  },
+  {
+    "name": "phone",
+    "class": "icon-phone",
+    "unicode": "f1a9"
+  },
+  {
+    "name": "plus",
+    "class": "icon-plus",
+    "unicode": "f158"
+  },
+  {
+    "name": "polo-shirt-dollar",
+    "class": "icon-polo-shirt-dollar",
+    "unicode": "f1aa"
+  },
+  {
+    "name": "poloshirt",
+    "class": "icon-poloshirt",
+    "unicode": "f1ab"
+  },
+  {
+    "name": "puma",
+    "class": "icon-puma",
+    "unicode": "f1ac"
+  },
+  {
+    "name": "question",
+    "class": "icon-question",
+    "unicode": "f1ad"
+  },
+  {
+    "name": "read-more",
+    "class": "icon-read-more",
+    "unicode": "f1ae"
+  },
+  {
+    "name": "reebok",
+    "class": "icon-reebok",
+    "unicode": "f1af"
+  },
+  {
+    "name": "reflective-transfer",
+    "class": "icon-reflective-transfer",
+    "unicode": "f1b0"
+  },
+  {
+    "name": "restaurant",
+    "class": "icon-restaurant",
+    "unicode": "f1b1"
+  },
+  {
+    "name": "richardson",
+    "class": "icon-richardson",
+    "unicode": "f1b2"
+  },
+  {
+    "name": "screen-printing",
+    "class": "icon-screen-printing",
+    "unicode": "f1b3"
+  },
+  {
+    "name": "scrubs",
+    "class": "icon-scrubs",
+    "unicode": "f1b4"
+  },
+  {
+    "name": "search",
+    "class": "icon-search",
+    "unicode": "f161"
+  },
+  {
+    "name": "sportswear",
+    "class": "icon-sportswear",
+    "unicode": "f1b5"
+  },
+  {
+    "name": "sun",
+    "class": "icon-sun",
+    "unicode": "f1b6"
+  },
+  {
+    "name": "tag",
+    "class": "icon-tag",
+    "unicode": "f1b7"
+  },
+  {
+    "name": "travismathew",
+    "class": "icon-travismathew",
+    "unicode": "f1b8"
+  },
+  {
+    "name": "trousers",
+    "class": "icon-trousers",
+    "unicode": "f1b9"
+  },
+  {
+    "name": "tshirt",
+    "class": "icon-tshirt",
+    "unicode": "f1ba"
+  },
+  {
+    "name": "tulip",
+    "class": "icon-tulip",
+    "unicode": "f1bb"
+  },
+  {
+    "name": "twitter",
+    "class": "icon-twitter",
+    "unicode": "f1bc"
+  },
+  {
+    "name": "umbrella",
+    "class": "icon-umbrella",
+    "unicode": "f1bd"
+  },
+  {
+    "name": "under-armour",
+    "class": "icon-under-armour",
+    "unicode": "f1be"
+  },
+  {
+    "name": "up-arrow",
+    "class": "icon-up-arrow",
+    "unicode": "f1bf"
+  },
+  {
+    "name": "upload",
+    "class": "icon-upload",
+    "unicode": "f1c0"
+  },
+  {
+    "name": "usa-flag",
+    "class": "icon-usa-flag",
+    "unicode": "f1c1"
+  },
+  {
+    "name": "user",
+    "class": "icon-user",
+    "unicode": "f1c2"
+  },
+  {
+    "name": "user-plus",
+    "class": "icon-user-plus",
+    "unicode": "f1c3"
+  },
+  {
+    "name": "water-bottle",
+    "class": "icon-water-bottle",
+    "unicode": "f1c4"
+  },
+  {
+    "name": "work-uniform",
+    "class": "icon-work-uniform",
+    "unicode": "f1c5"
+  },
+  {
+    "name": "zoom-in",
+    "class": "icon-zoom-in",
+    "unicode": "f1c6"
+  }
+]
