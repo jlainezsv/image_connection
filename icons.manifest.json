@@ -210,6 +210,11 @@
     "unicode": "f1a0"
   },
   {
+    "name": "jobs",
+    "class": "icon-jobs",
+    "unicode": "f1c7"
+  },
+  {
     "name": "menu",
     "class": "icon-menu",
     "unicode": "f1a1"

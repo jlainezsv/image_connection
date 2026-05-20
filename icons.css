@@ -52,6 +52,7 @@
 .icon-huk::before,
 .icon-image::before,
 .icon-info::before,
+.icon-jobs::before,
 .icon-menu::before,
 .icon-message::before,
 .icon-minus::before,
@@ -229,6 +230,9 @@
 }
 .icon-info::before {
   content: var(--icon-info);
+}
+.icon-jobs::before {
+  content: var(--icon-jobs);
 }
 .icon-menu::before {
   content: var(--icon-menu);
