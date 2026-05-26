@@ -1,4 +1,4 @@
-# BOXLANG Icon Font
+# Image Connection Icon Font
 
 A custom icon-font pipeline powered by Fantasticon.
 
